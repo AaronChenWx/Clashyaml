@@ -1,1830 +1,327 @@
-################################
-# 创建者：Youtube顺丰资源
-# 客户端：Clash.Meta
-# 使用模版：V2RaySE 默认模版
-################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
-mixed-port: 7890
+#
+#-------------------------------------------------------------#
+#  创建者：https://v2rayse.com
+#  创建时间：2025-10-21 10:49:34
+#  模版：v2rayse默认模版
+#  节点数量：38
+#-------------------------------------------------------------#
+#
+port: 7890
+socks-port: 7891
 allow-lan: true
+mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
-  nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-  fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
-
 proxies:
-  - {"name": "YouTube顺丰资源 中国1", "type": "vless", "server": "43.154.124.136", "port": 26666, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国2", "type": "vless", "server": "43.132.244.52", "port": 21415, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 澳大利亚3", "type": "vless", "server": "154.16.10.34", "port": 8080, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 南非4", "type": "vless", "server": "154.16.10.177", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国5", "type": "vless", "server": "192.131.142.161", "port": 46639, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 新加坡6", "type": "vless", "server": "8.212.27.131", "port": 443, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 美国7", "type": "vless", "server": "45.39.198.43", "port": 8080, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国香港8", "type": "vless", "server": "18.162.156.23", "port": 12355, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国9", "type": "vless", "server": "38.180.94.205", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 孟加拉国10", "type": "vless", "server": "175.29.23.5", "port": 7000, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "/Telegram@freecodes/?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 英国11", "type": "vless", "server": "141.11.77.248", "port": 8080, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 英国12", "type": "vless", "server": "109.176.254.71", "port": 60002, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 英国13", "type": "vless", "server": "109.176.254.71", "port": 60002, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 英国14", "type": "vless", "server": "141.11.78.77", "port": 8080, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 新加坡15", "type": "vless", "server": "178.128.80.43", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 新加坡16", "type": "vless", "server": "178.128.86.3", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国17", "type": "vless", "server": "146.235.18.248", "port": 45137, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国18", "type": "vless", "server": "47.79.38.17", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 新加坡19", "type": "vless", "server": "172.104.180.5", "port": 443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国20", "type": "vless", "server": "138.2.95.61", "port": 1111, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 英国21", "type": "vless", "server": "213.35.99.5", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国22", "type": "vless", "server": "43.128.95.110", "port": 40029, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 荷兰23", "type": "vless", "server": "141.98.197.101", "port": 11665, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国24", "type": "vless", "server": "150.230.212.7", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国25", "type": "vless", "server": "47.79.91.168", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国26", "type": "vless", "server": "192.46.231.158", "port": 443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 新加坡27", "type": "vless", "server": "8.218.36.133", "port": 9010, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 Nofound28", "type": "vless", "server": "160.22.79.155", "port": 443, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 美国29", "type": "vless", "server": "47.130.35.116", "port": 8888, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 英国30", "type": "vless", "server": "141.11.77.248", "port": 8080, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 新加坡31", "type": "vless", "server": "8.219.59.132", "port": 48130, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 新加坡32", "type": "vless", "server": "168.138.171.70", "port": 23280, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国33", "type": "vless", "server": "47.237.149.38", "port": 8443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国香港34", "type": "vless", "server": "223.16.138.113", "port": 10002, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 澳大利亚35", "type": "vless", "server": "140.83.63.113", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 Nofound36", "type": "vless", "server": "36.50.90.241", "port": 47790, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 日本37", "type": "vless", "server": "202.84.53.85", "port": 19999, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 新加坡38", "type": "vless", "server": "168.138.170.211", "port": 53702, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国39", "type": "vless", "server": "129.150.56.234", "port": 8443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 日本40", "type": "vless", "server": "132.145.115.62", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国台湾41", "type": "vless", "server": "60.249.114.181", "port": 32003, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 英国42", "type": "vless", "server": "176.97.70.166", "port": 443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国台湾43", "type": "vless", "server": "60.249.114.181", "port": 11285, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国44", "type": "vless", "server": "59.1.166.218", "port": 21244, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 英国45", "type": "vless", "server": "141.11.78.77", "port": 8080, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 日本46", "type": "vless", "server": "168.138.192.16", "port": 54584, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国47", "type": "vless", "server": "112.168.174.249", "port": 12299, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国48", "type": "vless", "server": "143.198.92.220", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 新加坡49", "type": "vless", "server": "8.210.96.197", "port": 12902, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国50", "type": "vless", "server": "121.181.118.220", "port": 15555, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国51", "type": "vless", "server": "43.154.124.136", "port": 26666, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国52", "type": "vless", "server": "218.148.100.87", "port": 12228, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 澳大利亚53", "type": "vless", "server": "140.83.83.65", "port": 9872, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2048", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国54", "type": "vless", "server": "61.73.36.4", "port": 32746, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国55", "type": "vless", "server": "115.91.178.253", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 日本56", "type": "vless", "server": "146.56.141.197", "port": 443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国57", "type": "vless", "server": "152.70.89.135", "port": 587, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 中国香港58", "type": "vless", "server": "45.192.224.253", "port": 2096, "uuid": "7556317c-dff6-46e8-ad29-b408f2a6456e", "tls": true, "servername": "vless.muzheng.top", "network": "ws", "ws-opts": {"path": "/Telegram @freecodes /?ed=2560", "headers": {"host": "vless.muzheng.top"}}}
-  - {"name": "YouTube顺丰资源 韩国59", "type": "vless", "server": "49.174.170.115", "port": 22577, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 新加坡60", "type": "vless", "server": "13.250.131.37", "port": 443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国61", "type": "vless", "server": "203.251.70.240", "port": 50000, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国62", "type": "vless", "server": "112.218.166.156", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国63", "type": "vless", "server": "222.113.18.214", "port": 12158, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国64", "type": "vless", "server": "112.219.152.250", "port": 50001, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国65", "type": "vless", "server": "47.130.35.116", "port": 8888, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国66", "type": "vless", "server": "121.143.95.1", "port": 50000, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国67", "type": "vless", "server": "220.118.109.204", "port": 12236, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国68", "type": "vless", "server": "123.143.9.5", "port": 14041, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国69", "type": "vless", "server": "211.197.161.123", "port": 10041, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 瑞士70", "type": "vless", "server": "64.110.101.90", "port": 55007, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国71", "type": "vless", "server": "121.145.253.124", "port": 50002, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国72", "type": "vless", "server": "118.41.28.45", "port": 50000, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国73", "type": "vless", "server": "218.54.55.117", "port": 12176, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国74", "type": "vless", "server": "121.145.253.124", "port": 30050, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国75", "type": "vless", "server": "222.96.197.31", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国76", "type": "vless", "server": "27.100.229.147", "port": 50000, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国77", "type": "vless", "server": "211.184.175.180", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国78", "type": "vless", "server": "115.40.244.240", "port": 12696, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国79", "type": "vless", "server": "115.40.244.240", "port": 23023, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国80", "type": "vless", "server": "61.73.36.4", "port": 20880, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国81", "type": "vless", "server": "112.172.38.246", "port": 10554, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国82", "type": "vless", "server": "211.33.238.198", "port": 15151, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 德国83", "type": "vless", "server": "85.208.104.34", "port": 8080, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国84", "type": "vless", "server": "59.22.88.168", "port": 50001, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国85", "type": "vless", "server": "49.246.69.204", "port": 10004, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国86", "type": "vless", "server": "59.25.160.141", "port": 50008, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国87", "type": "vless", "server": "152.69.229.175", "port": 22558, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国88", "type": "vless", "server": "59.3.62.251", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国89", "type": "vless", "server": "121.145.201.24", "port": 50004, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国90", "type": "vless", "server": "183.96.245.165", "port": 50001, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国91", "type": "vless", "server": "211.193.211.252", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国92", "type": "vless", "server": "14.32.12.235", "port": 10008, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国93", "type": "vless", "server": "106.245.216.35", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 日本94", "type": "vless", "server": "198.13.42.58", "port": 32954, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国95", "type": "vless", "server": "211.228.5.119", "port": 50001, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国96", "type": "vless", "server": "112.218.166.156", "port": 50001, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国97", "type": "vless", "server": "211.229.77.184", "port": 27443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国98", "type": "vless", "server": "183.106.76.116", "port": 29429, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国99", "type": "vless", "server": "61.78.80.72", "port": 10027, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国100", "type": "vless", "server": "202.150.185.128", "port": 32400, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国101", "type": "vless", "server": "218.154.22.99", "port": 50000, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国102", "type": "vless", "server": "211.219.241.28", "port": 31337, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 英国103", "type": "vless", "server": "176.97.70.51", "port": 2053, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国104", "type": "vless", "server": "121.181.118.220", "port": 50003, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国105", "type": "vless", "server": "183.104.0.181", "port": 16923, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国106", "type": "vless", "server": "218.54.55.117", "port": 12176, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国107", "type": "vless", "server": "202.150.185.128", "port": 22222, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国108", "type": "vless", "server": "121.131.104.228", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国109", "type": "vless", "server": "119.196.21.70", "port": 19871, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国110", "type": "vless", "server": "220.122.41.70", "port": 16064, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国111", "type": "vless", "server": "202.150.185.128", "port": 12242, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国112", "type": "vless", "server": "115.40.244.240", "port": 12696, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 美国113", "type": "vless", "server": "138.2.95.61", "port": 1111, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国114", "type": "vless", "server": "111.118.118.177", "port": 12319, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国115", "type": "vless", "server": "211.33.238.198", "port": 12357, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国116", "type": "vless", "server": "220.126.185.107", "port": 50001, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 伊朗117", "type": "vless", "server": "217.60.38.191", "port": 8443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国118", "type": "vless", "server": "211.196.80.94", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国香港119", "type": "vless", "server": "154.197.64.253", "port": 2096, "uuid": "7556317c-dff6-46e8-ad29-b408f2a6456e", "tls": true, "servername": "vless.muzheng.top", "network": "ws", "ws-opts": {"path": "/Telegram @freecodes /?ed=2560", "headers": {"host": "vless.muzheng.top"}}}
-  - {"name": "YouTube顺丰资源 美国120", "type": "vless", "server": "47.79.35.191", "port": 443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国121", "type": "vless", "server": "211.33.238.198", "port": 12295, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国122", "type": "vless", "server": "124.216.60.169", "port": 15502, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国123", "type": "vless", "server": "202.150.185.128", "port": 12261, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国124", "type": "vless", "server": "131.186.22.50", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国125", "type": "vless", "server": "222.109.206.218", "port": 50003, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 英国126", "type": "vless", "server": "158.179.174.3", "port": 443, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国127", "type": "vless", "server": "111.118.118.177", "port": 10014, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国128", "type": "vless", "server": "211.227.43.208", "port": 30058, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国129", "type": "vless", "server": "152.70.236.195", "port": 30001, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国130", "type": "vless", "server": "111.91.187.73", "port": 50005, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国131", "type": "vless", "server": "59.1.166.218", "port": 12247, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国132", "type": "vless", "server": "183.101.243.99", "port": 12576, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国香港133", "type": "vless", "server": "118.141.64.192", "port": 36619, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国134", "type": "vless", "server": "121.178.12.27", "port": 10162, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国135", "type": "vless", "server": "14.32.12.235", "port": 10008, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国136", "type": "vless", "server": "202.150.185.128", "port": 12242, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 保加利亚137", "type": "vless", "server": "91.229.132.157", "port": 443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国138", "type": "vless", "server": "1.249.45.86", "port": 12112, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 英国139", "type": "vless", "server": "213.35.107.73", "port": 443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国140", "type": "vless", "server": "14.32.12.235", "port": 10008, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国141", "type": "vless", "server": "220.94.34.138", "port": 21254, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 新加坡142", "type": "vless", "server": "178.128.119.65", "port": 443, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 日本143", "type": "vless", "server": "146.56.99.255", "port": 56789, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国144", "type": "vless", "server": "59.25.160.141", "port": 50008, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国香港145", "type": "vless", "server": "156.254.114.120", "port": 30011, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国146", "type": "vless", "server": "14.40.124.226", "port": 50003, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国147", "type": "vless", "server": "211.105.86.219", "port": 30012, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 德国148", "type": "vless", "server": "85.208.104.34", "port": 8080, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国149", "type": "vless", "server": "121.167.15.173", "port": 50000, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国150", "type": "vless", "server": "220.72.76.25", "port": 50001, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国151", "type": "vless", "server": "123.248.97.102", "port": 50001, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国152", "type": "vless", "server": "61.73.36.4", "port": 25388, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国153", "type": "vless", "server": "123.111.253.155", "port": 50000, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 伊朗154", "type": "vless", "server": "217.60.248.66", "port": 443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国155", "type": "vless", "server": "47.79.35.64", "port": 8443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国156", "type": "vless", "server": "118.39.44.24", "port": 50000, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国157", "type": "vless", "server": "39.123.97.116", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国158", "type": "vless", "server": "38.6.219.16", "port": 8080, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 美国159", "type": "vless", "server": "45.38.42.109", "port": 2053, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国160", "type": "vless", "server": "211.33.238.198", "port": 12295, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国161", "type": "vless", "server": "202.150.185.128", "port": 12321, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 日本162", "type": "vless", "server": "167.179.96.121", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 俄罗斯163", "type": "vless", "server": "46.8.226.39", "port": 8443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 新加坡164", "type": "vless", "server": "206.189.85.0", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国165", "type": "vless", "server": "38.180.28.163", "port": 2053, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国166", "type": "vless", "server": "118.39.44.24", "port": 50001, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国167", "type": "vless", "server": "211.33.238.198", "port": 11182, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国168", "type": "vless", "server": "1.254.152.56", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 日本169", "type": "vless", "server": "202.84.53.85", "port": 19999, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 日本170", "type": "vless", "server": "146.56.99.22", "port": 20443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国171", "type": "vless", "server": "129.150.35.29", "port": 587, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 俄罗斯172", "type": "vless", "server": "46.8.78.122", "port": 8443, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 新加坡173", "type": "vless", "server": "54.255.217.120", "port": 8192, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国174", "type": "vless", "server": "38.180.94.97", "port": 443, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国175", "type": "vless", "server": "112.184.45.203", "port": 50000, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国176", "type": "vless", "server": "222.120.119.146", "port": 50000, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 美国177", "type": "vless", "server": "64.49.14.41", "port": 8443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 英国178", "type": "vless", "server": "144.24.73.232", "port": 443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 德国179", "type": "vless", "server": "85.208.104.34", "port": 8080, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国180", "type": "vless", "server": "119.195.219.150", "port": 10065, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 美国181", "type": "vless", "server": "47.79.43.222", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国182", "type": "vless", "server": "141.147.188.120", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国香港183", "type": "vless", "server": "118.141.64.192", "port": 36619, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 美国184", "type": "vless", "server": "129.150.36.188", "port": 53435, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国香港185", "type": "vless", "server": "156.254.114.171", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国186", "type": "vless", "server": "118.47.194.165", "port": 50000, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国187", "type": "vless", "server": "111.91.159.49", "port": 30048, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国188", "type": "vless", "server": "1.238.209.247", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 俄罗斯189", "type": "vless", "server": "81.19.140.131", "port": 443, "uuid": "677615f7-87d5-5019-a44d-4fc3ff8d59d7", "tls": false, "servername": "vk.cc", "network": "tcp"}
-  - {"name": "YouTube顺丰资源 日本190", "type": "vless", "server": "139.162.84.132", "port": 18836, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国191", "type": "vless", "server": "14.33.140.80", "port": 50000, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国192", "type": "vless", "server": "121.176.175.54", "port": 10249, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国193", "type": "vless", "server": "59.19.192.51", "port": 12326, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国194", "type": "vless", "server": "134.185.106.69", "port": 32768, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "/X@节点狂魔/?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国195", "type": "vless", "server": "39.114.16.138", "port": 50001, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国196", "type": "vless", "server": "112.167.55.103", "port": 12334, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国197", "type": "vless", "server": "134.185.106.69", "port": 32768, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "/freecodes@节点狂魔/?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国198", "type": "vless", "server": "59.19.192.51", "port": 18888, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国199", "type": "vless", "server": "61.73.36.4", "port": 20364, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国200", "type": "vless", "server": "218.151.91.131", "port": 12151, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国201", "type": "vless", "server": "all.tellmethetrue.shop", "port": 443, "uuid": "e4824193-4f54-453b-d037-88368e85ef0e", "tls": true, "servername": "pqh30v5.hiddendom.shop", "network": "grpc"}
-  - {"name": "YouTube顺丰资源 中国香港202", "type": "vless", "server": "156.254.114.171", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国203", "type": "vless", "server": "175.215.205.40", "port": 12121, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 日本204", "type": "vless", "server": "45.77.25.6", "port": 48828, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 伊朗205", "type": "vless", "server": "217.60.248.66", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国206", "type": "vless", "server": "124.216.60.169", "port": 29850, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国207", "type": "vless", "server": "59.30.5.169", "port": 50002, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国208", "type": "vless", "server": "27.117.52.110", "port": 50001, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 日本209", "type": "vless", "server": "168.138.46.67", "port": 443, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "/X@节点狂魔/?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国210", "type": "vless", "server": "111.91.159.49", "port": 30048, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国211", "type": "vless", "server": "147.75.225.105", "port": 443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 南非212", "type": "vless", "server": "192.142.4.76", "port": 2053, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国213", "type": "vless", "server": "183.106.76.116", "port": 29429, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国214", "type": "vless", "server": "119.201.195.135", "port": 10001, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国215", "type": "vless", "server": "64.176.42.125", "port": 10001, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国216", "type": "vless", "server": "112.184.45.203", "port": 30106, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 英国217", "type": "vless", "server": "213.35.108.135", "port": 12596, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国218", "type": "vless", "server": "43.132.244.52", "port": 21415, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国219", "type": "vless", "server": "211.59.232.85", "port": 12140, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 澳大利亚220", "type": "vless", "server": "140.83.60.81", "port": 18443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国221", "type": "vless", "server": "61.85.1.77", "port": 12106, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国香港222", "type": "vless", "server": "156.254.114.171", "port": 443, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国223", "type": "vless", "server": "175.124.213.144", "port": 50001, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国224", "type": "vless", "server": "61.85.1.77", "port": 12247, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国225", "type": "vless", "server": "115.93.169.180", "port": 50000, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国226", "type": "vless", "server": "61.85.1.77", "port": 12394, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 瑞典227", "type": "vless", "server": "138.3.222.124", "port": 46209, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国228", "type": "vless", "server": "222.101.91.204", "port": 50000, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国229", "type": "vless", "server": "61.85.1.77", "port": 12088, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 乌克兰230", "type": "vless", "server": "194.36.179.17", "port": 8443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 伊朗231", "type": "vless", "server": "217.60.38.191", "port": 2053, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国232", "type": "vless", "server": "220.122.41.70", "port": 10073, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国233", "type": "vless", "server": "14.36.155.120", "port": 21286, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国234", "type": "vless", "server": "49.246.69.204", "port": 10004, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国235", "type": "vless", "server": "111.118.118.177", "port": 22222, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国236", "type": "vless", "server": "61.85.1.77", "port": 12182, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国237", "type": "vless", "server": "202.150.185.128", "port": 10031, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 爱尔兰238", "type": "vless", "server": "185.18.222.208", "port": 2053, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 美国239", "type": "vless", "server": "146.235.19.79", "port": 28983, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 中国台湾240", "type": "vless", "server": "60.249.114.181", "port": 16022, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "Telegram @freecodes /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国241", "type": "vless", "server": "220.118.236.239", "port": 12290, "uuid": "ad7f1445-d916-49a0-88b8-d6adc9f5d26b", "tls": true, "servername": "vless.901312.xyz", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "vless.901312.xyz"}}}
-  - {"name": "YouTube顺丰资源 韩国242", "type": "vless", "server": "175.211.35.161", "port": 50003, "uuid": "64bf9c97-212c-4814-ad17-f8539b53a8bd", "tls": true, "servername": "vless.pengjiajin.sbs", "network": "ws", "ws-opts": {"path": "freecodes @节点狂魔 /?ed=2560", "headers": {"host": "vless.pengjiajin.sbs"}}}
-  - {"name": "YouTube顺丰资源 瑞典243", "type": "vless", "server": "217.142.141.52", "port": 443, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
-  - {"name": "YouTube顺丰资源 韩国244", "type": "vless", "server": "222.113.18.214", "port": 10049, "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26", "tls": true, "servername": "gaosir.unfeeling.sbs", "network": "ws", "ws-opts": {"path": "X @节点狂魔 /?ed=2560", "headers": {"host": "gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_1|529KB/s","server":"175.215.175.175","port":50003,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/telegram
+    @freecodes /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇺🇸US_1|680KB/s","server":"195.13.45.253","port":2096,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/x@节点狂魔/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_2|600KB/s","server":"182.31.70.92","port":12336,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/x
+    @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_3|1.2MB/s","server":"211.57.90.42","port":50000,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/telegram
+    @freecodes /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_4|576KB/s","server":"14.40.124.226","port":50003,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/x
+    @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_5|729KB/s","server":"175.211.35.161","port":50003,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/x
+    @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_6|584KB/s","server":"218.155.245.69","port":50003,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/telegram
+    @freecodes /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_7|691KB/s","server":"221.163.173.252","port":50004,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/x
+    @节点狂魔 /","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇹🇼TW_1|1.2MB/s","server":"210.61.97.241","port":81,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/x
+    @节点狂魔 /","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_8|986KB/s","server":"121.158.194.32","port":11611,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇺🇸US_2|632KB/s","server":"188.42.145.253","port":2096,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/xu0001f1e8u0001f1f3@freecodes/?ed=2560fp=chrome","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_9|1.9MB/s","server":"49.142.150.222","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/telegram
+    @freecodes /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_10|597KB/s","server":"14.35.29.177","port":15211,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/telegram
+    @freecodes /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_11|558KB/s","server":"222.113.18.211","port":14443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vmess","name":"🇸🇨SC_1|6.7MB/s","server":"124.236.46.114","port":"47083","uuid":"fd49381f-9fd8-4403-8698-48331a4d775d","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"hysteria","name":"%F0%9F%87%AB%F0%9F%87%B7FR_1%7C4.2MB%2Fs","server":"195.154.200.40","port":15010,"auth_str":"dongtaiwang.com","alpn":"h3","up":100,"down":100,"sni":"apple.com","skip-cert-verify":true,"recv_window":41943040,"recv_window_conn":10485760,"disable_mtu_discovery":true}
+  - {"type":"trojan","name":"🇭🇰HK_1|519KB/s","server":"36.150.215.138","port":4451,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"36.150.215.138"}
+  - {"type":"vless","name":"🇩🇪DE_1|4.3MB/s","server":"104.18.41.9","port":443,"uuid":"930e2d97-c3e4-4840-9289-748ae4fde82e","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"matoride2.sabzipolo.site","ws-opts":{"path":"/downloader.php?ed=2560","headers":{"host":"matoride2.sabzipolo.site"}}}
+  - {"type":"vless","name":"🇰🇷KR_12|1.1MB/s","server":"119.65.139.101","port":60001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/x@节点狂魔","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vmess","name":"🇸🇬SG_1|3.2MB/s","server":"43.134.68.44","port":"49379","uuid":"ab98dd68-7f21-4fa9-d6ec-b83b520e1e3e","alterId":"0","cipher":"auto","network":"none"}
+  - {"type":"vmess","name":"🇸🇬SG_2|690KB/s","server":"43.134.68.44","port":"41943","uuid":"2d80ad2c-fb8d-4555-8e0f-3061b76b2f62","alterId":"0","cipher":"auto","network":"none"}
+  - {"type":"vmess","name":"🇭🇰HK_2|1.0MB/s","server":"45.38.42.210","port":"17872","uuid":"9a7ba7d1-c0b0-479a-a109-447993cd3e41","alterId":"0","cipher":"auto","network":"none"}
+  - {"type":"vless","name":"🇰🇷KR_13|520KB/s","server":"222.113.18.207","port":16030,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/X@节点狂魔","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"hysteria","name":"%F0%9F%87%B3%F0%9F%87%B1NL_1%7C4.9MB%2Fs","server":"51.159.226.1","port":49003,"auth_str":"dongtaiwang.com","alpn":"h3","protocol":"udp","up":11,"down":55,"sni":"apple.com","skip-cert-verify":true,"recv_window":23068672,"recv_window_conn":5767168,"disable_mtu_discovery":true}
+  - {"type":"trojan","name":"🇩🇪DE_2|1.0MB/s","server":"138.124.118.34","port":443,"password":"iwangjie","udp":true,"skip-cert-verify":true,"sni":"nodes.830901.xyz","network":"ws","ws-opts":{"path":"/proxyip=proxyip.fxxk.dedyn.io"}}
+  - {"type":"ss","name":"🇻🇳VN_1|1.1MB/s","server":"103.186.154.18","port":38388,"cipher":"aes-256-cfb","password":"Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"}
+  - {"type":"ss","name":"🇻🇳VN_2|609KB/s","server":"103.186.154.235","port":38388,"cipher":"aes-256-cfb","password":"Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"}
+  - {"type":"ss","name":"🇻🇳VN_3|669KB/s","server":"103.186.155.103","port":38388,"cipher":"aes-256-cfb","password":"Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"}
+  - {"type":"hysteria","name":"%F0%9F%87%AB%F0%9F%87%B7FR_2%7C1.9MB%2Fs","server":"62.210.127.217","port":50011,"auth_str":"dongtaiwang.com","alpn":"h3","protocol":"udp","up":11,"down":55,"sni":"apple.com","skip-cert-verify":true,"recv_window":23068672,"recv_window_conn":5767168,"disable_mtu_discovery":true}
+  - {"type":"vless","name":"🇩🇪DE_3|574KB/s","server":"104.20.2.221","port":8443,"uuid":"6c7a6a6a-6a6a-4000-8000-000000000002","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bycf.lzjnb.shop","ws-opts":{"path":"/?ed=2560","headers":{"host":"bycf.lzjnb.shop"}}}
+  - {"type":"vless","name":"🇰🇷KR_14|986KB/s","server":"175.208.202.41","port":20583,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/Telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇫🇮FI_1|2.2MB/s","server":"104.17.147.22","port":8080,"uuid":"Parsashonam-Bot-32","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"Fi.Parsashonam.CfD.","ws-opts":{"path":"/Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056","headers":{"host":"Fi.Parsashonam.CfD."}}}
+  - {"type":"vless","name":"🇺🇸US_3|1.7MB/s","server":"104.17.147.22","port":8880,"uuid":"Parsashonam-Bot-32","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"Fi.Parsashonam.CfD.","ws-opts":{"path":"/Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056","headers":{"host":"Fi.Parsashonam.CfD."}}}
+  - {"type":"vless","name":"🇰🇷KR_15|2.1MB/s","server":"211.184.133.123","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/X@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇯🇵JP_1|645KB/s","server":"203.243.63.166","port":27249,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/Telegram🇨🇳@WangCai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_16|533KB/s","server":"118.40.126.7","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/X@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇰🇷KR_17|515KB/s","server":"220.72.245.245","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/X@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"type":"vless","name":"🇺🇸US_4|512KB/s","server":"115.40.244.240","port":23023,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"gaosir.unfeeling.sbs","ws-opts":{"path":"/Telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - YouTube顺丰资源 中国1
-      - YouTube顺丰资源 中国2
-      - YouTube顺丰资源 澳大利亚3
-      - YouTube顺丰资源 南非4
-      - YouTube顺丰资源 美国5
-      - YouTube顺丰资源 新加坡6
-      - YouTube顺丰资源 美国7
-      - YouTube顺丰资源 中国香港8
-      - YouTube顺丰资源 美国9
-      - YouTube顺丰资源 孟加拉国10
-      - YouTube顺丰资源 英国11
-      - YouTube顺丰资源 英国12
-      - YouTube顺丰资源 英国13
-      - YouTube顺丰资源 英国14
-      - YouTube顺丰资源 新加坡15
-      - YouTube顺丰资源 新加坡16
-      - YouTube顺丰资源 美国17
-      - YouTube顺丰资源 美国18
-      - YouTube顺丰资源 新加坡19
-      - YouTube顺丰资源 美国20
-      - YouTube顺丰资源 英国21
-      - YouTube顺丰资源 中国22
-      - YouTube顺丰资源 荷兰23
-      - YouTube顺丰资源 美国24
-      - YouTube顺丰资源 美国25
-      - YouTube顺丰资源 美国26
-      - YouTube顺丰资源 新加坡27
-      - YouTube顺丰资源 Nofound28
-      - YouTube顺丰资源 美国29
-      - YouTube顺丰资源 英国30
-      - YouTube顺丰资源 新加坡31
-      - YouTube顺丰资源 新加坡32
-      - YouTube顺丰资源 美国33
-      - YouTube顺丰资源 中国香港34
-      - YouTube顺丰资源 澳大利亚35
-      - YouTube顺丰资源 Nofound36
-      - YouTube顺丰资源 日本37
-      - YouTube顺丰资源 新加坡38
-      - YouTube顺丰资源 美国39
-      - YouTube顺丰资源 日本40
-      - YouTube顺丰资源 中国台湾41
-      - YouTube顺丰资源 英国42
-      - YouTube顺丰资源 中国台湾43
-      - YouTube顺丰资源 韩国44
-      - YouTube顺丰资源 英国45
-      - YouTube顺丰资源 日本46
-      - YouTube顺丰资源 韩国47
-      - YouTube顺丰资源 美国48
-      - YouTube顺丰资源 新加坡49
-      - YouTube顺丰资源 韩国50
-      - YouTube顺丰资源 中国51
-      - YouTube顺丰资源 韩国52
-      - YouTube顺丰资源 澳大利亚53
-      - YouTube顺丰资源 韩国54
-      - YouTube顺丰资源 韩国55
-      - YouTube顺丰资源 日本56
-      - YouTube顺丰资源 美国57
-      - YouTube顺丰资源 中国香港58
-      - YouTube顺丰资源 韩国59
-      - YouTube顺丰资源 新加坡60
-      - YouTube顺丰资源 韩国61
-      - YouTube顺丰资源 韩国62
-      - YouTube顺丰资源 韩国63
-      - YouTube顺丰资源 韩国64
-      - YouTube顺丰资源 美国65
-      - YouTube顺丰资源 韩国66
-      - YouTube顺丰资源 韩国67
-      - YouTube顺丰资源 韩国68
-      - YouTube顺丰资源 韩国69
-      - YouTube顺丰资源 瑞士70
-      - YouTube顺丰资源 韩国71
-      - YouTube顺丰资源 韩国72
-      - YouTube顺丰资源 韩国73
-      - YouTube顺丰资源 韩国74
-      - YouTube顺丰资源 韩国75
-      - YouTube顺丰资源 韩国76
-      - YouTube顺丰资源 韩国77
-      - YouTube顺丰资源 韩国78
-      - YouTube顺丰资源 韩国79
-      - YouTube顺丰资源 韩国80
-      - YouTube顺丰资源 韩国81
-      - YouTube顺丰资源 韩国82
-      - YouTube顺丰资源 德国83
-      - YouTube顺丰资源 韩国84
-      - YouTube顺丰资源 韩国85
-      - YouTube顺丰资源 韩国86
-      - YouTube顺丰资源 美国87
-      - YouTube顺丰资源 韩国88
-      - YouTube顺丰资源 韩国89
-      - YouTube顺丰资源 韩国90
-      - YouTube顺丰资源 韩国91
-      - YouTube顺丰资源 韩国92
-      - YouTube顺丰资源 韩国93
-      - YouTube顺丰资源 日本94
-      - YouTube顺丰资源 韩国95
-      - YouTube顺丰资源 韩国96
-      - YouTube顺丰资源 韩国97
-      - YouTube顺丰资源 韩国98
-      - YouTube顺丰资源 韩国99
-      - YouTube顺丰资源 韩国100
-      - YouTube顺丰资源 韩国101
-      - YouTube顺丰资源 韩国102
-      - YouTube顺丰资源 英国103
-      - YouTube顺丰资源 韩国104
-      - YouTube顺丰资源 韩国105
-      - YouTube顺丰资源 韩国106
-      - YouTube顺丰资源 韩国107
-      - YouTube顺丰资源 韩国108
-      - YouTube顺丰资源 韩国109
-      - YouTube顺丰资源 韩国110
-      - YouTube顺丰资源 韩国111
-      - YouTube顺丰资源 韩国112
-      - YouTube顺丰资源 美国113
-      - YouTube顺丰资源 韩国114
-      - YouTube顺丰资源 韩国115
-      - YouTube顺丰资源 韩国116
-      - YouTube顺丰资源 伊朗117
-      - YouTube顺丰资源 韩国118
-      - YouTube顺丰资源 中国香港119
-      - YouTube顺丰资源 美国120
-      - YouTube顺丰资源 韩国121
-      - YouTube顺丰资源 韩国122
-      - YouTube顺丰资源 韩国123
-      - YouTube顺丰资源 美国124
-      - YouTube顺丰资源 韩国125
-      - YouTube顺丰资源 英国126
-      - YouTube顺丰资源 韩国127
-      - YouTube顺丰资源 韩国128
-      - YouTube顺丰资源 美国129
-      - YouTube顺丰资源 韩国130
-      - YouTube顺丰资源 韩国131
-      - YouTube顺丰资源 韩国132
-      - YouTube顺丰资源 中国香港133
-      - YouTube顺丰资源 韩国134
-      - YouTube顺丰资源 韩国135
-      - YouTube顺丰资源 韩国136
-      - YouTube顺丰资源 保加利亚137
-      - YouTube顺丰资源 韩国138
-      - YouTube顺丰资源 英国139
-      - YouTube顺丰资源 韩国140
-      - YouTube顺丰资源 韩国141
-      - YouTube顺丰资源 新加坡142
-      - YouTube顺丰资源 日本143
-      - YouTube顺丰资源 韩国144
-      - YouTube顺丰资源 中国香港145
-      - YouTube顺丰资源 韩国146
-      - YouTube顺丰资源 韩国147
-      - YouTube顺丰资源 德国148
-      - YouTube顺丰资源 韩国149
-      - YouTube顺丰资源 韩国150
-      - YouTube顺丰资源 韩国151
-      - YouTube顺丰资源 韩国152
-      - YouTube顺丰资源 韩国153
-      - YouTube顺丰资源 伊朗154
-      - YouTube顺丰资源 美国155
-      - YouTube顺丰资源 韩国156
-      - YouTube顺丰资源 韩国157
-      - YouTube顺丰资源 美国158
-      - YouTube顺丰资源 美国159
-      - YouTube顺丰资源 韩国160
-      - YouTube顺丰资源 韩国161
-      - YouTube顺丰资源 日本162
-      - YouTube顺丰资源 俄罗斯163
-      - YouTube顺丰资源 新加坡164
-      - YouTube顺丰资源 美国165
-      - YouTube顺丰资源 韩国166
-      - YouTube顺丰资源 韩国167
-      - YouTube顺丰资源 韩国168
-      - YouTube顺丰资源 日本169
-      - YouTube顺丰资源 日本170
-      - YouTube顺丰资源 美国171
-      - YouTube顺丰资源 俄罗斯172
-      - YouTube顺丰资源 新加坡173
-      - YouTube顺丰资源 美国174
-      - YouTube顺丰资源 韩国175
-      - YouTube顺丰资源 韩国176
-      - YouTube顺丰资源 美国177
-      - YouTube顺丰资源 英国178
-      - YouTube顺丰资源 德国179
-      - YouTube顺丰资源 韩国180
-      - YouTube顺丰资源 美国181
-      - YouTube顺丰资源 美国182
-      - YouTube顺丰资源 中国香港183
-      - YouTube顺丰资源 美国184
-      - YouTube顺丰资源 中国香港185
-      - YouTube顺丰资源 韩国186
-      - YouTube顺丰资源 韩国187
-      - YouTube顺丰资源 韩国188
-      - YouTube顺丰资源 俄罗斯189
-      - YouTube顺丰资源 日本190
-      - YouTube顺丰资源 韩国191
-      - YouTube顺丰资源 韩国192
-      - YouTube顺丰资源 韩国193
-      - YouTube顺丰资源 美国194
-      - YouTube顺丰资源 韩国195
-      - YouTube顺丰资源 韩国196
-      - YouTube顺丰资源 美国197
-      - YouTube顺丰资源 韩国198
-      - YouTube顺丰资源 韩国199
-      - YouTube顺丰资源 韩国200
-      - YouTube顺丰资源 美国201
-      - YouTube顺丰资源 中国香港202
-      - YouTube顺丰资源 韩国203
-      - YouTube顺丰资源 日本204
-      - YouTube顺丰资源 伊朗205
-      - YouTube顺丰资源 韩国206
-      - YouTube顺丰资源 韩国207
-      - YouTube顺丰资源 韩国208
-      - YouTube顺丰资源 日本209
-      - YouTube顺丰资源 韩国210
-      - YouTube顺丰资源 韩国211
-      - YouTube顺丰资源 南非212
-      - YouTube顺丰资源 韩国213
-      - YouTube顺丰资源 韩国214
-      - YouTube顺丰资源 美国215
-      - YouTube顺丰资源 韩国216
-      - YouTube顺丰资源 英国217
-      - YouTube顺丰资源 中国218
-      - YouTube顺丰资源 韩国219
-      - YouTube顺丰资源 澳大利亚220
-      - YouTube顺丰资源 韩国221
-      - YouTube顺丰资源 中国香港222
-      - YouTube顺丰资源 韩国223
-      - YouTube顺丰资源 韩国224
-      - YouTube顺丰资源 韩国225
-      - YouTube顺丰资源 韩国226
-      - YouTube顺丰资源 瑞典227
-      - YouTube顺丰资源 韩国228
-      - YouTube顺丰资源 韩国229
-      - YouTube顺丰资源 乌克兰230
-      - YouTube顺丰资源 伊朗231
-      - YouTube顺丰资源 韩国232
-      - YouTube顺丰资源 韩国233
-      - YouTube顺丰资源 韩国234
-      - YouTube顺丰资源 韩国235
-      - YouTube顺丰资源 韩国236
-      - YouTube顺丰资源 韩国237
-      - YouTube顺丰资源 爱尔兰238
-      - YouTube顺丰资源 美国239
-      - YouTube顺丰资源 中国台湾240
-      - YouTube顺丰资源 韩国241
-      - YouTube顺丰资源 韩国242
-      - YouTube顺丰资源 瑞典243
-      - YouTube顺丰资源 韩国244
+      - 🇰🇷KR_1|529KB/s
+      - 🇺🇸US_1|680KB/s
+      - 🇰🇷KR_2|600KB/s
+      - 🇰🇷KR_3|1.2MB/s
+      - 🇰🇷KR_4|576KB/s
+      - 🇰🇷KR_5|729KB/s
+      - 🇰🇷KR_6|584KB/s
+      - 🇰🇷KR_7|691KB/s
+      - 🇹🇼TW_1|1.2MB/s
+      - 🇰🇷KR_8|986KB/s
+      - 🇺🇸US_2|632KB/s
+      - 🇰🇷KR_9|1.9MB/s
+      - 🇰🇷KR_10|597KB/s
+      - 🇰🇷KR_11|558KB/s
+      - 🇸🇨SC_1|6.7MB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_1%7C4.2MB%2Fs'
+      - 🇭🇰HK_1|519KB/s
+      - 🇩🇪DE_1|4.3MB/s
+      - 🇰🇷KR_12|1.1MB/s
+      - 🇸🇬SG_1|3.2MB/s
+      - 🇸🇬SG_2|690KB/s
+      - 🇭🇰HK_2|1.0MB/s
+      - 🇰🇷KR_13|520KB/s
+      - '%F0%9F%87%B3%F0%9F%87%B1NL_1%7C4.9MB%2Fs'
+      - 🇩🇪DE_2|1.0MB/s
+      - 🇻🇳VN_1|1.1MB/s
+      - 🇻🇳VN_2|609KB/s
+      - 🇻🇳VN_3|669KB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_2%7C1.9MB%2Fs'
+      - 🇩🇪DE_3|574KB/s
+      - 🇰🇷KR_14|986KB/s
+      - 🇫🇮FI_1|2.2MB/s
+      - 🇺🇸US_3|1.7MB/s
+      - 🇰🇷KR_15|2.1MB/s
+      - 🇯🇵JP_1|645KB/s
+      - 🇰🇷KR_16|533KB/s
+      - 🇰🇷KR_17|515KB/s
+      - 🇺🇸US_4|512KB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - YouTube顺丰资源 中国1
-      - YouTube顺丰资源 中国2
-      - YouTube顺丰资源 澳大利亚3
-      - YouTube顺丰资源 南非4
-      - YouTube顺丰资源 美国5
-      - YouTube顺丰资源 新加坡6
-      - YouTube顺丰资源 美国7
-      - YouTube顺丰资源 中国香港8
-      - YouTube顺丰资源 美国9
-      - YouTube顺丰资源 孟加拉国10
-      - YouTube顺丰资源 英国11
-      - YouTube顺丰资源 英国12
-      - YouTube顺丰资源 英国13
-      - YouTube顺丰资源 英国14
-      - YouTube顺丰资源 新加坡15
-      - YouTube顺丰资源 新加坡16
-      - YouTube顺丰资源 美国17
-      - YouTube顺丰资源 美国18
-      - YouTube顺丰资源 新加坡19
-      - YouTube顺丰资源 美国20
-      - YouTube顺丰资源 英国21
-      - YouTube顺丰资源 中国22
-      - YouTube顺丰资源 荷兰23
-      - YouTube顺丰资源 美国24
-      - YouTube顺丰资源 美国25
-      - YouTube顺丰资源 美国26
-      - YouTube顺丰资源 新加坡27
-      - YouTube顺丰资源 Nofound28
-      - YouTube顺丰资源 美国29
-      - YouTube顺丰资源 英国30
-      - YouTube顺丰资源 新加坡31
-      - YouTube顺丰资源 新加坡32
-      - YouTube顺丰资源 美国33
-      - YouTube顺丰资源 中国香港34
-      - YouTube顺丰资源 澳大利亚35
-      - YouTube顺丰资源 Nofound36
-      - YouTube顺丰资源 日本37
-      - YouTube顺丰资源 新加坡38
-      - YouTube顺丰资源 美国39
-      - YouTube顺丰资源 日本40
-      - YouTube顺丰资源 中国台湾41
-      - YouTube顺丰资源 英国42
-      - YouTube顺丰资源 中国台湾43
-      - YouTube顺丰资源 韩国44
-      - YouTube顺丰资源 英国45
-      - YouTube顺丰资源 日本46
-      - YouTube顺丰资源 韩国47
-      - YouTube顺丰资源 美国48
-      - YouTube顺丰资源 新加坡49
-      - YouTube顺丰资源 韩国50
-      - YouTube顺丰资源 中国51
-      - YouTube顺丰资源 韩国52
-      - YouTube顺丰资源 澳大利亚53
-      - YouTube顺丰资源 韩国54
-      - YouTube顺丰资源 韩国55
-      - YouTube顺丰资源 日本56
-      - YouTube顺丰资源 美国57
-      - YouTube顺丰资源 中国香港58
-      - YouTube顺丰资源 韩国59
-      - YouTube顺丰资源 新加坡60
-      - YouTube顺丰资源 韩国61
-      - YouTube顺丰资源 韩国62
-      - YouTube顺丰资源 韩国63
-      - YouTube顺丰资源 韩国64
-      - YouTube顺丰资源 美国65
-      - YouTube顺丰资源 韩国66
-      - YouTube顺丰资源 韩国67
-      - YouTube顺丰资源 韩国68
-      - YouTube顺丰资源 韩国69
-      - YouTube顺丰资源 瑞士70
-      - YouTube顺丰资源 韩国71
-      - YouTube顺丰资源 韩国72
-      - YouTube顺丰资源 韩国73
-      - YouTube顺丰资源 韩国74
-      - YouTube顺丰资源 韩国75
-      - YouTube顺丰资源 韩国76
-      - YouTube顺丰资源 韩国77
-      - YouTube顺丰资源 韩国78
-      - YouTube顺丰资源 韩国79
-      - YouTube顺丰资源 韩国80
-      - YouTube顺丰资源 韩国81
-      - YouTube顺丰资源 韩国82
-      - YouTube顺丰资源 德国83
-      - YouTube顺丰资源 韩国84
-      - YouTube顺丰资源 韩国85
-      - YouTube顺丰资源 韩国86
-      - YouTube顺丰资源 美国87
-      - YouTube顺丰资源 韩国88
-      - YouTube顺丰资源 韩国89
-      - YouTube顺丰资源 韩国90
-      - YouTube顺丰资源 韩国91
-      - YouTube顺丰资源 韩国92
-      - YouTube顺丰资源 韩国93
-      - YouTube顺丰资源 日本94
-      - YouTube顺丰资源 韩国95
-      - YouTube顺丰资源 韩国96
-      - YouTube顺丰资源 韩国97
-      - YouTube顺丰资源 韩国98
-      - YouTube顺丰资源 韩国99
-      - YouTube顺丰资源 韩国100
-      - YouTube顺丰资源 韩国101
-      - YouTube顺丰资源 韩国102
-      - YouTube顺丰资源 英国103
-      - YouTube顺丰资源 韩国104
-      - YouTube顺丰资源 韩国105
-      - YouTube顺丰资源 韩国106
-      - YouTube顺丰资源 韩国107
-      - YouTube顺丰资源 韩国108
-      - YouTube顺丰资源 韩国109
-      - YouTube顺丰资源 韩国110
-      - YouTube顺丰资源 韩国111
-      - YouTube顺丰资源 韩国112
-      - YouTube顺丰资源 美国113
-      - YouTube顺丰资源 韩国114
-      - YouTube顺丰资源 韩国115
-      - YouTube顺丰资源 韩国116
-      - YouTube顺丰资源 伊朗117
-      - YouTube顺丰资源 韩国118
-      - YouTube顺丰资源 中国香港119
-      - YouTube顺丰资源 美国120
-      - YouTube顺丰资源 韩国121
-      - YouTube顺丰资源 韩国122
-      - YouTube顺丰资源 韩国123
-      - YouTube顺丰资源 美国124
-      - YouTube顺丰资源 韩国125
-      - YouTube顺丰资源 英国126
-      - YouTube顺丰资源 韩国127
-      - YouTube顺丰资源 韩国128
-      - YouTube顺丰资源 美国129
-      - YouTube顺丰资源 韩国130
-      - YouTube顺丰资源 韩国131
-      - YouTube顺丰资源 韩国132
-      - YouTube顺丰资源 中国香港133
-      - YouTube顺丰资源 韩国134
-      - YouTube顺丰资源 韩国135
-      - YouTube顺丰资源 韩国136
-      - YouTube顺丰资源 保加利亚137
-      - YouTube顺丰资源 韩国138
-      - YouTube顺丰资源 英国139
-      - YouTube顺丰资源 韩国140
-      - YouTube顺丰资源 韩国141
-      - YouTube顺丰资源 新加坡142
-      - YouTube顺丰资源 日本143
-      - YouTube顺丰资源 韩国144
-      - YouTube顺丰资源 中国香港145
-      - YouTube顺丰资源 韩国146
-      - YouTube顺丰资源 韩国147
-      - YouTube顺丰资源 德国148
-      - YouTube顺丰资源 韩国149
-      - YouTube顺丰资源 韩国150
-      - YouTube顺丰资源 韩国151
-      - YouTube顺丰资源 韩国152
-      - YouTube顺丰资源 韩国153
-      - YouTube顺丰资源 伊朗154
-      - YouTube顺丰资源 美国155
-      - YouTube顺丰资源 韩国156
-      - YouTube顺丰资源 韩国157
-      - YouTube顺丰资源 美国158
-      - YouTube顺丰资源 美国159
-      - YouTube顺丰资源 韩国160
-      - YouTube顺丰资源 韩国161
-      - YouTube顺丰资源 日本162
-      - YouTube顺丰资源 俄罗斯163
-      - YouTube顺丰资源 新加坡164
-      - YouTube顺丰资源 美国165
-      - YouTube顺丰资源 韩国166
-      - YouTube顺丰资源 韩国167
-      - YouTube顺丰资源 韩国168
-      - YouTube顺丰资源 日本169
-      - YouTube顺丰资源 日本170
-      - YouTube顺丰资源 美国171
-      - YouTube顺丰资源 俄罗斯172
-      - YouTube顺丰资源 新加坡173
-      - YouTube顺丰资源 美国174
-      - YouTube顺丰资源 韩国175
-      - YouTube顺丰资源 韩国176
-      - YouTube顺丰资源 美国177
-      - YouTube顺丰资源 英国178
-      - YouTube顺丰资源 德国179
-      - YouTube顺丰资源 韩国180
-      - YouTube顺丰资源 美国181
-      - YouTube顺丰资源 美国182
-      - YouTube顺丰资源 中国香港183
-      - YouTube顺丰资源 美国184
-      - YouTube顺丰资源 中国香港185
-      - YouTube顺丰资源 韩国186
-      - YouTube顺丰资源 韩国187
-      - YouTube顺丰资源 韩国188
-      - YouTube顺丰资源 俄罗斯189
-      - YouTube顺丰资源 日本190
-      - YouTube顺丰资源 韩国191
-      - YouTube顺丰资源 韩国192
-      - YouTube顺丰资源 韩国193
-      - YouTube顺丰资源 美国194
-      - YouTube顺丰资源 韩国195
-      - YouTube顺丰资源 韩国196
-      - YouTube顺丰资源 美国197
-      - YouTube顺丰资源 韩国198
-      - YouTube顺丰资源 韩国199
-      - YouTube顺丰资源 韩国200
-      - YouTube顺丰资源 美国201
-      - YouTube顺丰资源 中国香港202
-      - YouTube顺丰资源 韩国203
-      - YouTube顺丰资源 日本204
-      - YouTube顺丰资源 伊朗205
-      - YouTube顺丰资源 韩国206
-      - YouTube顺丰资源 韩国207
-      - YouTube顺丰资源 韩国208
-      - YouTube顺丰资源 日本209
-      - YouTube顺丰资源 韩国210
-      - YouTube顺丰资源 韩国211
-      - YouTube顺丰资源 南非212
-      - YouTube顺丰资源 韩国213
-      - YouTube顺丰资源 韩国214
-      - YouTube顺丰资源 美国215
-      - YouTube顺丰资源 韩国216
-      - YouTube顺丰资源 英国217
-      - YouTube顺丰资源 中国218
-      - YouTube顺丰资源 韩国219
-      - YouTube顺丰资源 澳大利亚220
-      - YouTube顺丰资源 韩国221
-      - YouTube顺丰资源 中国香港222
-      - YouTube顺丰资源 韩国223
-      - YouTube顺丰资源 韩国224
-      - YouTube顺丰资源 韩国225
-      - YouTube顺丰资源 韩国226
-      - YouTube顺丰资源 瑞典227
-      - YouTube顺丰资源 韩国228
-      - YouTube顺丰资源 韩国229
-      - YouTube顺丰资源 乌克兰230
-      - YouTube顺丰资源 伊朗231
-      - YouTube顺丰资源 韩国232
-      - YouTube顺丰资源 韩国233
-      - YouTube顺丰资源 韩国234
-      - YouTube顺丰资源 韩国235
-      - YouTube顺丰资源 韩国236
-      - YouTube顺丰资源 韩国237
-      - YouTube顺丰资源 爱尔兰238
-      - YouTube顺丰资源 美国239
-      - YouTube顺丰资源 中国台湾240
-      - YouTube顺丰资源 韩国241
-      - YouTube顺丰资源 韩国242
-      - YouTube顺丰资源 瑞典243
-      - YouTube顺丰资源 韩国244
+      - 🇰🇷KR_1|529KB/s
+      - 🇺🇸US_1|680KB/s
+      - 🇰🇷KR_2|600KB/s
+      - 🇰🇷KR_3|1.2MB/s
+      - 🇰🇷KR_4|576KB/s
+      - 🇰🇷KR_5|729KB/s
+      - 🇰🇷KR_6|584KB/s
+      - 🇰🇷KR_7|691KB/s
+      - 🇹🇼TW_1|1.2MB/s
+      - 🇰🇷KR_8|986KB/s
+      - 🇺🇸US_2|632KB/s
+      - 🇰🇷KR_9|1.9MB/s
+      - 🇰🇷KR_10|597KB/s
+      - 🇰🇷KR_11|558KB/s
+      - 🇸🇨SC_1|6.7MB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_1%7C4.2MB%2Fs'
+      - 🇭🇰HK_1|519KB/s
+      - 🇩🇪DE_1|4.3MB/s
+      - 🇰🇷KR_12|1.1MB/s
+      - 🇸🇬SG_1|3.2MB/s
+      - 🇸🇬SG_2|690KB/s
+      - 🇭🇰HK_2|1.0MB/s
+      - 🇰🇷KR_13|520KB/s
+      - '%F0%9F%87%B3%F0%9F%87%B1NL_1%7C4.9MB%2Fs'
+      - 🇩🇪DE_2|1.0MB/s
+      - 🇻🇳VN_1|1.1MB/s
+      - 🇻🇳VN_2|609KB/s
+      - 🇻🇳VN_3|669KB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_2%7C1.9MB%2Fs'
+      - 🇩🇪DE_3|574KB/s
+      - 🇰🇷KR_14|986KB/s
+      - 🇫🇮FI_1|2.2MB/s
+      - 🇺🇸US_3|1.7MB/s
+      - 🇰🇷KR_15|2.1MB/s
+      - 🇯🇵JP_1|645KB/s
+      - 🇰🇷KR_16|533KB/s
+      - 🇰🇷KR_17|515KB/s
+      - 🇺🇸US_4|512KB/s
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube顺丰资源 中国1
-      - YouTube顺丰资源 中国2
-      - YouTube顺丰资源 澳大利亚3
-      - YouTube顺丰资源 南非4
-      - YouTube顺丰资源 美国5
-      - YouTube顺丰资源 新加坡6
-      - YouTube顺丰资源 美国7
-      - YouTube顺丰资源 中国香港8
-      - YouTube顺丰资源 美国9
-      - YouTube顺丰资源 孟加拉国10
-      - YouTube顺丰资源 英国11
-      - YouTube顺丰资源 英国12
-      - YouTube顺丰资源 英国13
-      - YouTube顺丰资源 英国14
-      - YouTube顺丰资源 新加坡15
-      - YouTube顺丰资源 新加坡16
-      - YouTube顺丰资源 美国17
-      - YouTube顺丰资源 美国18
-      - YouTube顺丰资源 新加坡19
-      - YouTube顺丰资源 美国20
-      - YouTube顺丰资源 英国21
-      - YouTube顺丰资源 中国22
-      - YouTube顺丰资源 荷兰23
-      - YouTube顺丰资源 美国24
-      - YouTube顺丰资源 美国25
-      - YouTube顺丰资源 美国26
-      - YouTube顺丰资源 新加坡27
-      - YouTube顺丰资源 Nofound28
-      - YouTube顺丰资源 美国29
-      - YouTube顺丰资源 英国30
-      - YouTube顺丰资源 新加坡31
-      - YouTube顺丰资源 新加坡32
-      - YouTube顺丰资源 美国33
-      - YouTube顺丰资源 中国香港34
-      - YouTube顺丰资源 澳大利亚35
-      - YouTube顺丰资源 Nofound36
-      - YouTube顺丰资源 日本37
-      - YouTube顺丰资源 新加坡38
-      - YouTube顺丰资源 美国39
-      - YouTube顺丰资源 日本40
-      - YouTube顺丰资源 中国台湾41
-      - YouTube顺丰资源 英国42
-      - YouTube顺丰资源 中国台湾43
-      - YouTube顺丰资源 韩国44
-      - YouTube顺丰资源 英国45
-      - YouTube顺丰资源 日本46
-      - YouTube顺丰资源 韩国47
-      - YouTube顺丰资源 美国48
-      - YouTube顺丰资源 新加坡49
-      - YouTube顺丰资源 韩国50
-      - YouTube顺丰资源 中国51
-      - YouTube顺丰资源 韩国52
-      - YouTube顺丰资源 澳大利亚53
-      - YouTube顺丰资源 韩国54
-      - YouTube顺丰资源 韩国55
-      - YouTube顺丰资源 日本56
-      - YouTube顺丰资源 美国57
-      - YouTube顺丰资源 中国香港58
-      - YouTube顺丰资源 韩国59
-      - YouTube顺丰资源 新加坡60
-      - YouTube顺丰资源 韩国61
-      - YouTube顺丰资源 韩国62
-      - YouTube顺丰资源 韩国63
-      - YouTube顺丰资源 韩国64
-      - YouTube顺丰资源 美国65
-      - YouTube顺丰资源 韩国66
-      - YouTube顺丰资源 韩国67
-      - YouTube顺丰资源 韩国68
-      - YouTube顺丰资源 韩国69
-      - YouTube顺丰资源 瑞士70
-      - YouTube顺丰资源 韩国71
-      - YouTube顺丰资源 韩国72
-      - YouTube顺丰资源 韩国73
-      - YouTube顺丰资源 韩国74
-      - YouTube顺丰资源 韩国75
-      - YouTube顺丰资源 韩国76
-      - YouTube顺丰资源 韩国77
-      - YouTube顺丰资源 韩国78
-      - YouTube顺丰资源 韩国79
-      - YouTube顺丰资源 韩国80
-      - YouTube顺丰资源 韩国81
-      - YouTube顺丰资源 韩国82
-      - YouTube顺丰资源 德国83
-      - YouTube顺丰资源 韩国84
-      - YouTube顺丰资源 韩国85
-      - YouTube顺丰资源 韩国86
-      - YouTube顺丰资源 美国87
-      - YouTube顺丰资源 韩国88
-      - YouTube顺丰资源 韩国89
-      - YouTube顺丰资源 韩国90
-      - YouTube顺丰资源 韩国91
-      - YouTube顺丰资源 韩国92
-      - YouTube顺丰资源 韩国93
-      - YouTube顺丰资源 日本94
-      - YouTube顺丰资源 韩国95
-      - YouTube顺丰资源 韩国96
-      - YouTube顺丰资源 韩国97
-      - YouTube顺丰资源 韩国98
-      - YouTube顺丰资源 韩国99
-      - YouTube顺丰资源 韩国100
-      - YouTube顺丰资源 韩国101
-      - YouTube顺丰资源 韩国102
-      - YouTube顺丰资源 英国103
-      - YouTube顺丰资源 韩国104
-      - YouTube顺丰资源 韩国105
-      - YouTube顺丰资源 韩国106
-      - YouTube顺丰资源 韩国107
-      - YouTube顺丰资源 韩国108
-      - YouTube顺丰资源 韩国109
-      - YouTube顺丰资源 韩国110
-      - YouTube顺丰资源 韩国111
-      - YouTube顺丰资源 韩国112
-      - YouTube顺丰资源 美国113
-      - YouTube顺丰资源 韩国114
-      - YouTube顺丰资源 韩国115
-      - YouTube顺丰资源 韩国116
-      - YouTube顺丰资源 伊朗117
-      - YouTube顺丰资源 韩国118
-      - YouTube顺丰资源 中国香港119
-      - YouTube顺丰资源 美国120
-      - YouTube顺丰资源 韩国121
-      - YouTube顺丰资源 韩国122
-      - YouTube顺丰资源 韩国123
-      - YouTube顺丰资源 美国124
-      - YouTube顺丰资源 韩国125
-      - YouTube顺丰资源 英国126
-      - YouTube顺丰资源 韩国127
-      - YouTube顺丰资源 韩国128
-      - YouTube顺丰资源 美国129
-      - YouTube顺丰资源 韩国130
-      - YouTube顺丰资源 韩国131
-      - YouTube顺丰资源 韩国132
-      - YouTube顺丰资源 中国香港133
-      - YouTube顺丰资源 韩国134
-      - YouTube顺丰资源 韩国135
-      - YouTube顺丰资源 韩国136
-      - YouTube顺丰资源 保加利亚137
-      - YouTube顺丰资源 韩国138
-      - YouTube顺丰资源 英国139
-      - YouTube顺丰资源 韩国140
-      - YouTube顺丰资源 韩国141
-      - YouTube顺丰资源 新加坡142
-      - YouTube顺丰资源 日本143
-      - YouTube顺丰资源 韩国144
-      - YouTube顺丰资源 中国香港145
-      - YouTube顺丰资源 韩国146
-      - YouTube顺丰资源 韩国147
-      - YouTube顺丰资源 德国148
-      - YouTube顺丰资源 韩国149
-      - YouTube顺丰资源 韩国150
-      - YouTube顺丰资源 韩国151
-      - YouTube顺丰资源 韩国152
-      - YouTube顺丰资源 韩国153
-      - YouTube顺丰资源 伊朗154
-      - YouTube顺丰资源 美国155
-      - YouTube顺丰资源 韩国156
-      - YouTube顺丰资源 韩国157
-      - YouTube顺丰资源 美国158
-      - YouTube顺丰资源 美国159
-      - YouTube顺丰资源 韩国160
-      - YouTube顺丰资源 韩国161
-      - YouTube顺丰资源 日本162
-      - YouTube顺丰资源 俄罗斯163
-      - YouTube顺丰资源 新加坡164
-      - YouTube顺丰资源 美国165
-      - YouTube顺丰资源 韩国166
-      - YouTube顺丰资源 韩国167
-      - YouTube顺丰资源 韩国168
-      - YouTube顺丰资源 日本169
-      - YouTube顺丰资源 日本170
-      - YouTube顺丰资源 美国171
-      - YouTube顺丰资源 俄罗斯172
-      - YouTube顺丰资源 新加坡173
-      - YouTube顺丰资源 美国174
-      - YouTube顺丰资源 韩国175
-      - YouTube顺丰资源 韩国176
-      - YouTube顺丰资源 美国177
-      - YouTube顺丰资源 英国178
-      - YouTube顺丰资源 德国179
-      - YouTube顺丰资源 韩国180
-      - YouTube顺丰资源 美国181
-      - YouTube顺丰资源 美国182
-      - YouTube顺丰资源 中国香港183
-      - YouTube顺丰资源 美国184
-      - YouTube顺丰资源 中国香港185
-      - YouTube顺丰资源 韩国186
-      - YouTube顺丰资源 韩国187
-      - YouTube顺丰资源 韩国188
-      - YouTube顺丰资源 俄罗斯189
-      - YouTube顺丰资源 日本190
-      - YouTube顺丰资源 韩国191
-      - YouTube顺丰资源 韩国192
-      - YouTube顺丰资源 韩国193
-      - YouTube顺丰资源 美国194
-      - YouTube顺丰资源 韩国195
-      - YouTube顺丰资源 韩国196
-      - YouTube顺丰资源 美国197
-      - YouTube顺丰资源 韩国198
-      - YouTube顺丰资源 韩国199
-      - YouTube顺丰资源 韩国200
-      - YouTube顺丰资源 美国201
-      - YouTube顺丰资源 中国香港202
-      - YouTube顺丰资源 韩国203
-      - YouTube顺丰资源 日本204
-      - YouTube顺丰资源 伊朗205
-      - YouTube顺丰资源 韩国206
-      - YouTube顺丰资源 韩国207
-      - YouTube顺丰资源 韩国208
-      - YouTube顺丰资源 日本209
-      - YouTube顺丰资源 韩国210
-      - YouTube顺丰资源 韩国211
-      - YouTube顺丰资源 南非212
-      - YouTube顺丰资源 韩国213
-      - YouTube顺丰资源 韩国214
-      - YouTube顺丰资源 美国215
-      - YouTube顺丰资源 韩国216
-      - YouTube顺丰资源 英国217
-      - YouTube顺丰资源 中国218
-      - YouTube顺丰资源 韩国219
-      - YouTube顺丰资源 澳大利亚220
-      - YouTube顺丰资源 韩国221
-      - YouTube顺丰资源 中国香港222
-      - YouTube顺丰资源 韩国223
-      - YouTube顺丰资源 韩国224
-      - YouTube顺丰资源 韩国225
-      - YouTube顺丰资源 韩国226
-      - YouTube顺丰资源 瑞典227
-      - YouTube顺丰资源 韩国228
-      - YouTube顺丰资源 韩国229
-      - YouTube顺丰资源 乌克兰230
-      - YouTube顺丰资源 伊朗231
-      - YouTube顺丰资源 韩国232
-      - YouTube顺丰资源 韩国233
-      - YouTube顺丰资源 韩国234
-      - YouTube顺丰资源 韩国235
-      - YouTube顺丰资源 韩国236
-      - YouTube顺丰资源 韩国237
-      - YouTube顺丰资源 爱尔兰238
-      - YouTube顺丰资源 美国239
-      - YouTube顺丰资源 中国台湾240
-      - YouTube顺丰资源 韩国241
-      - YouTube顺丰资源 韩国242
-      - YouTube顺丰资源 瑞典243
-      - YouTube顺丰资源 韩国244
+      - 🇰🇷KR_1|529KB/s
+      - 🇺🇸US_1|680KB/s
+      - 🇰🇷KR_2|600KB/s
+      - 🇰🇷KR_3|1.2MB/s
+      - 🇰🇷KR_4|576KB/s
+      - 🇰🇷KR_5|729KB/s
+      - 🇰🇷KR_6|584KB/s
+      - 🇰🇷KR_7|691KB/s
+      - 🇹🇼TW_1|1.2MB/s
+      - 🇰🇷KR_8|986KB/s
+      - 🇺🇸US_2|632KB/s
+      - 🇰🇷KR_9|1.9MB/s
+      - 🇰🇷KR_10|597KB/s
+      - 🇰🇷KR_11|558KB/s
+      - 🇸🇨SC_1|6.7MB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_1%7C4.2MB%2Fs'
+      - 🇭🇰HK_1|519KB/s
+      - 🇩🇪DE_1|4.3MB/s
+      - 🇰🇷KR_12|1.1MB/s
+      - 🇸🇬SG_1|3.2MB/s
+      - 🇸🇬SG_2|690KB/s
+      - 🇭🇰HK_2|1.0MB/s
+      - 🇰🇷KR_13|520KB/s
+      - '%F0%9F%87%B3%F0%9F%87%B1NL_1%7C4.9MB%2Fs'
+      - 🇩🇪DE_2|1.0MB/s
+      - 🇻🇳VN_1|1.1MB/s
+      - 🇻🇳VN_2|609KB/s
+      - 🇻🇳VN_3|669KB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_2%7C1.9MB%2Fs'
+      - 🇩🇪DE_3|574KB/s
+      - 🇰🇷KR_14|986KB/s
+      - 🇫🇮FI_1|2.2MB/s
+      - 🇺🇸US_3|1.7MB/s
+      - 🇰🇷KR_15|2.1MB/s
+      - 🇯🇵JP_1|645KB/s
+      - 🇰🇷KR_16|533KB/s
+      - 🇰🇷KR_17|515KB/s
+      - 🇺🇸US_4|512KB/s
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - YouTube顺丰资源 中国1
-      - YouTube顺丰资源 中国2
-      - YouTube顺丰资源 澳大利亚3
-      - YouTube顺丰资源 南非4
-      - YouTube顺丰资源 美国5
-      - YouTube顺丰资源 新加坡6
-      - YouTube顺丰资源 美国7
-      - YouTube顺丰资源 中国香港8
-      - YouTube顺丰资源 美国9
-      - YouTube顺丰资源 孟加拉国10
-      - YouTube顺丰资源 英国11
-      - YouTube顺丰资源 英国12
-      - YouTube顺丰资源 英国13
-      - YouTube顺丰资源 英国14
-      - YouTube顺丰资源 新加坡15
-      - YouTube顺丰资源 新加坡16
-      - YouTube顺丰资源 美国17
-      - YouTube顺丰资源 美国18
-      - YouTube顺丰资源 新加坡19
-      - YouTube顺丰资源 美国20
-      - YouTube顺丰资源 英国21
-      - YouTube顺丰资源 中国22
-      - YouTube顺丰资源 荷兰23
-      - YouTube顺丰资源 美国24
-      - YouTube顺丰资源 美国25
-      - YouTube顺丰资源 美国26
-      - YouTube顺丰资源 新加坡27
-      - YouTube顺丰资源 Nofound28
-      - YouTube顺丰资源 美国29
-      - YouTube顺丰资源 英国30
-      - YouTube顺丰资源 新加坡31
-      - YouTube顺丰资源 新加坡32
-      - YouTube顺丰资源 美国33
-      - YouTube顺丰资源 中国香港34
-      - YouTube顺丰资源 澳大利亚35
-      - YouTube顺丰资源 Nofound36
-      - YouTube顺丰资源 日本37
-      - YouTube顺丰资源 新加坡38
-      - YouTube顺丰资源 美国39
-      - YouTube顺丰资源 日本40
-      - YouTube顺丰资源 中国台湾41
-      - YouTube顺丰资源 英国42
-      - YouTube顺丰资源 中国台湾43
-      - YouTube顺丰资源 韩国44
-      - YouTube顺丰资源 英国45
-      - YouTube顺丰资源 日本46
-      - YouTube顺丰资源 韩国47
-      - YouTube顺丰资源 美国48
-      - YouTube顺丰资源 新加坡49
-      - YouTube顺丰资源 韩国50
-      - YouTube顺丰资源 中国51
-      - YouTube顺丰资源 韩国52
-      - YouTube顺丰资源 澳大利亚53
-      - YouTube顺丰资源 韩国54
-      - YouTube顺丰资源 韩国55
-      - YouTube顺丰资源 日本56
-      - YouTube顺丰资源 美国57
-      - YouTube顺丰资源 中国香港58
-      - YouTube顺丰资源 韩国59
-      - YouTube顺丰资源 新加坡60
-      - YouTube顺丰资源 韩国61
-      - YouTube顺丰资源 韩国62
-      - YouTube顺丰资源 韩国63
-      - YouTube顺丰资源 韩国64
-      - YouTube顺丰资源 美国65
-      - YouTube顺丰资源 韩国66
-      - YouTube顺丰资源 韩国67
-      - YouTube顺丰资源 韩国68
-      - YouTube顺丰资源 韩国69
-      - YouTube顺丰资源 瑞士70
-      - YouTube顺丰资源 韩国71
-      - YouTube顺丰资源 韩国72
-      - YouTube顺丰资源 韩国73
-      - YouTube顺丰资源 韩国74
-      - YouTube顺丰资源 韩国75
-      - YouTube顺丰资源 韩国76
-      - YouTube顺丰资源 韩国77
-      - YouTube顺丰资源 韩国78
-      - YouTube顺丰资源 韩国79
-      - YouTube顺丰资源 韩国80
-      - YouTube顺丰资源 韩国81
-      - YouTube顺丰资源 韩国82
-      - YouTube顺丰资源 德国83
-      - YouTube顺丰资源 韩国84
-      - YouTube顺丰资源 韩国85
-      - YouTube顺丰资源 韩国86
-      - YouTube顺丰资源 美国87
-      - YouTube顺丰资源 韩国88
-      - YouTube顺丰资源 韩国89
-      - YouTube顺丰资源 韩国90
-      - YouTube顺丰资源 韩国91
-      - YouTube顺丰资源 韩国92
-      - YouTube顺丰资源 韩国93
-      - YouTube顺丰资源 日本94
-      - YouTube顺丰资源 韩国95
-      - YouTube顺丰资源 韩国96
-      - YouTube顺丰资源 韩国97
-      - YouTube顺丰资源 韩国98
-      - YouTube顺丰资源 韩国99
-      - YouTube顺丰资源 韩国100
-      - YouTube顺丰资源 韩国101
-      - YouTube顺丰资源 韩国102
-      - YouTube顺丰资源 英国103
-      - YouTube顺丰资源 韩国104
-      - YouTube顺丰资源 韩国105
-      - YouTube顺丰资源 韩国106
-      - YouTube顺丰资源 韩国107
-      - YouTube顺丰资源 韩国108
-      - YouTube顺丰资源 韩国109
-      - YouTube顺丰资源 韩国110
-      - YouTube顺丰资源 韩国111
-      - YouTube顺丰资源 韩国112
-      - YouTube顺丰资源 美国113
-      - YouTube顺丰资源 韩国114
-      - YouTube顺丰资源 韩国115
-      - YouTube顺丰资源 韩国116
-      - YouTube顺丰资源 伊朗117
-      - YouTube顺丰资源 韩国118
-      - YouTube顺丰资源 中国香港119
-      - YouTube顺丰资源 美国120
-      - YouTube顺丰资源 韩国121
-      - YouTube顺丰资源 韩国122
-      - YouTube顺丰资源 韩国123
-      - YouTube顺丰资源 美国124
-      - YouTube顺丰资源 韩国125
-      - YouTube顺丰资源 英国126
-      - YouTube顺丰资源 韩国127
-      - YouTube顺丰资源 韩国128
-      - YouTube顺丰资源 美国129
-      - YouTube顺丰资源 韩国130
-      - YouTube顺丰资源 韩国131
-      - YouTube顺丰资源 韩国132
-      - YouTube顺丰资源 中国香港133
-      - YouTube顺丰资源 韩国134
-      - YouTube顺丰资源 韩国135
-      - YouTube顺丰资源 韩国136
-      - YouTube顺丰资源 保加利亚137
-      - YouTube顺丰资源 韩国138
-      - YouTube顺丰资源 英国139
-      - YouTube顺丰资源 韩国140
-      - YouTube顺丰资源 韩国141
-      - YouTube顺丰资源 新加坡142
-      - YouTube顺丰资源 日本143
-      - YouTube顺丰资源 韩国144
-      - YouTube顺丰资源 中国香港145
-      - YouTube顺丰资源 韩国146
-      - YouTube顺丰资源 韩国147
-      - YouTube顺丰资源 德国148
-      - YouTube顺丰资源 韩国149
-      - YouTube顺丰资源 韩国150
-      - YouTube顺丰资源 韩国151
-      - YouTube顺丰资源 韩国152
-      - YouTube顺丰资源 韩国153
-      - YouTube顺丰资源 伊朗154
-      - YouTube顺丰资源 美国155
-      - YouTube顺丰资源 韩国156
-      - YouTube顺丰资源 韩国157
-      - YouTube顺丰资源 美国158
-      - YouTube顺丰资源 美国159
-      - YouTube顺丰资源 韩国160
-      - YouTube顺丰资源 韩国161
-      - YouTube顺丰资源 日本162
-      - YouTube顺丰资源 俄罗斯163
-      - YouTube顺丰资源 新加坡164
-      - YouTube顺丰资源 美国165
-      - YouTube顺丰资源 韩国166
-      - YouTube顺丰资源 韩国167
-      - YouTube顺丰资源 韩国168
-      - YouTube顺丰资源 日本169
-      - YouTube顺丰资源 日本170
-      - YouTube顺丰资源 美国171
-      - YouTube顺丰资源 俄罗斯172
-      - YouTube顺丰资源 新加坡173
-      - YouTube顺丰资源 美国174
-      - YouTube顺丰资源 韩国175
-      - YouTube顺丰资源 韩国176
-      - YouTube顺丰资源 美国177
-      - YouTube顺丰资源 英国178
-      - YouTube顺丰资源 德国179
-      - YouTube顺丰资源 韩国180
-      - YouTube顺丰资源 美国181
-      - YouTube顺丰资源 美国182
-      - YouTube顺丰资源 中国香港183
-      - YouTube顺丰资源 美国184
-      - YouTube顺丰资源 中国香港185
-      - YouTube顺丰资源 韩国186
-      - YouTube顺丰资源 韩国187
-      - YouTube顺丰资源 韩国188
-      - YouTube顺丰资源 俄罗斯189
-      - YouTube顺丰资源 日本190
-      - YouTube顺丰资源 韩国191
-      - YouTube顺丰资源 韩国192
-      - YouTube顺丰资源 韩国193
-      - YouTube顺丰资源 美国194
-      - YouTube顺丰资源 韩国195
-      - YouTube顺丰资源 韩国196
-      - YouTube顺丰资源 美国197
-      - YouTube顺丰资源 韩国198
-      - YouTube顺丰资源 韩国199
-      - YouTube顺丰资源 韩国200
-      - YouTube顺丰资源 美国201
-      - YouTube顺丰资源 中国香港202
-      - YouTube顺丰资源 韩国203
-      - YouTube顺丰资源 日本204
-      - YouTube顺丰资源 伊朗205
-      - YouTube顺丰资源 韩国206
-      - YouTube顺丰资源 韩国207
-      - YouTube顺丰资源 韩国208
-      - YouTube顺丰资源 日本209
-      - YouTube顺丰资源 韩国210
-      - YouTube顺丰资源 韩国211
-      - YouTube顺丰资源 南非212
-      - YouTube顺丰资源 韩国213
-      - YouTube顺丰资源 韩国214
-      - YouTube顺丰资源 美国215
-      - YouTube顺丰资源 韩国216
-      - YouTube顺丰资源 英国217
-      - YouTube顺丰资源 中国218
-      - YouTube顺丰资源 韩国219
-      - YouTube顺丰资源 澳大利亚220
-      - YouTube顺丰资源 韩国221
-      - YouTube顺丰资源 中国香港222
-      - YouTube顺丰资源 韩国223
-      - YouTube顺丰资源 韩国224
-      - YouTube顺丰资源 韩国225
-      - YouTube顺丰资源 韩国226
-      - YouTube顺丰资源 瑞典227
-      - YouTube顺丰资源 韩国228
-      - YouTube顺丰资源 韩国229
-      - YouTube顺丰资源 乌克兰230
-      - YouTube顺丰资源 伊朗231
-      - YouTube顺丰资源 韩国232
-      - YouTube顺丰资源 韩国233
-      - YouTube顺丰资源 韩国234
-      - YouTube顺丰资源 韩国235
-      - YouTube顺丰资源 韩国236
-      - YouTube顺丰资源 韩国237
-      - YouTube顺丰资源 爱尔兰238
-      - YouTube顺丰资源 美国239
-      - YouTube顺丰资源 中国台湾240
-      - YouTube顺丰资源 韩国241
-      - YouTube顺丰资源 韩国242
-      - YouTube顺丰资源 瑞典243
-      - YouTube顺丰资源 韩国244
+      - 🇰🇷KR_1|529KB/s
+      - 🇺🇸US_1|680KB/s
+      - 🇰🇷KR_2|600KB/s
+      - 🇰🇷KR_3|1.2MB/s
+      - 🇰🇷KR_4|576KB/s
+      - 🇰🇷KR_5|729KB/s
+      - 🇰🇷KR_6|584KB/s
+      - 🇰🇷KR_7|691KB/s
+      - 🇹🇼TW_1|1.2MB/s
+      - 🇰🇷KR_8|986KB/s
+      - 🇺🇸US_2|632KB/s
+      - 🇰🇷KR_9|1.9MB/s
+      - 🇰🇷KR_10|597KB/s
+      - 🇰🇷KR_11|558KB/s
+      - 🇸🇨SC_1|6.7MB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_1%7C4.2MB%2Fs'
+      - 🇭🇰HK_1|519KB/s
+      - 🇩🇪DE_1|4.3MB/s
+      - 🇰🇷KR_12|1.1MB/s
+      - 🇸🇬SG_1|3.2MB/s
+      - 🇸🇬SG_2|690KB/s
+      - 🇭🇰HK_2|1.0MB/s
+      - 🇰🇷KR_13|520KB/s
+      - '%F0%9F%87%B3%F0%9F%87%B1NL_1%7C4.9MB%2Fs'
+      - 🇩🇪DE_2|1.0MB/s
+      - 🇻🇳VN_1|1.1MB/s
+      - 🇻🇳VN_2|609KB/s
+      - 🇻🇳VN_3|669KB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_2%7C1.9MB%2Fs'
+      - 🇩🇪DE_3|574KB/s
+      - 🇰🇷KR_14|986KB/s
+      - 🇫🇮FI_1|2.2MB/s
+      - 🇺🇸US_3|1.7MB/s
+      - 🇰🇷KR_15|2.1MB/s
+      - 🇯🇵JP_1|645KB/s
+      - 🇰🇷KR_16|533KB/s
+      - 🇰🇷KR_17|515KB/s
+      - 🇺🇸US_4|512KB/s
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - YouTube顺丰资源 中国1
-      - YouTube顺丰资源 中国2
-      - YouTube顺丰资源 澳大利亚3
-      - YouTube顺丰资源 南非4
-      - YouTube顺丰资源 美国5
-      - YouTube顺丰资源 新加坡6
-      - YouTube顺丰资源 美国7
-      - YouTube顺丰资源 中国香港8
-      - YouTube顺丰资源 美国9
-      - YouTube顺丰资源 孟加拉国10
-      - YouTube顺丰资源 英国11
-      - YouTube顺丰资源 英国12
-      - YouTube顺丰资源 英国13
-      - YouTube顺丰资源 英国14
-      - YouTube顺丰资源 新加坡15
-      - YouTube顺丰资源 新加坡16
-      - YouTube顺丰资源 美国17
-      - YouTube顺丰资源 美国18
-      - YouTube顺丰资源 新加坡19
-      - YouTube顺丰资源 美国20
-      - YouTube顺丰资源 英国21
-      - YouTube顺丰资源 中国22
-      - YouTube顺丰资源 荷兰23
-      - YouTube顺丰资源 美国24
-      - YouTube顺丰资源 美国25
-      - YouTube顺丰资源 美国26
-      - YouTube顺丰资源 新加坡27
-      - YouTube顺丰资源 Nofound28
-      - YouTube顺丰资源 美国29
-      - YouTube顺丰资源 英国30
-      - YouTube顺丰资源 新加坡31
-      - YouTube顺丰资源 新加坡32
-      - YouTube顺丰资源 美国33
-      - YouTube顺丰资源 中国香港34
-      - YouTube顺丰资源 澳大利亚35
-      - YouTube顺丰资源 Nofound36
-      - YouTube顺丰资源 日本37
-      - YouTube顺丰资源 新加坡38
-      - YouTube顺丰资源 美国39
-      - YouTube顺丰资源 日本40
-      - YouTube顺丰资源 中国台湾41
-      - YouTube顺丰资源 英国42
-      - YouTube顺丰资源 中国台湾43
-      - YouTube顺丰资源 韩国44
-      - YouTube顺丰资源 英国45
-      - YouTube顺丰资源 日本46
-      - YouTube顺丰资源 韩国47
-      - YouTube顺丰资源 美国48
-      - YouTube顺丰资源 新加坡49
-      - YouTube顺丰资源 韩国50
-      - YouTube顺丰资源 中国51
-      - YouTube顺丰资源 韩国52
-      - YouTube顺丰资源 澳大利亚53
-      - YouTube顺丰资源 韩国54
-      - YouTube顺丰资源 韩国55
-      - YouTube顺丰资源 日本56
-      - YouTube顺丰资源 美国57
-      - YouTube顺丰资源 中国香港58
-      - YouTube顺丰资源 韩国59
-      - YouTube顺丰资源 新加坡60
-      - YouTube顺丰资源 韩国61
-      - YouTube顺丰资源 韩国62
-      - YouTube顺丰资源 韩国63
-      - YouTube顺丰资源 韩国64
-      - YouTube顺丰资源 美国65
-      - YouTube顺丰资源 韩国66
-      - YouTube顺丰资源 韩国67
-      - YouTube顺丰资源 韩国68
-      - YouTube顺丰资源 韩国69
-      - YouTube顺丰资源 瑞士70
-      - YouTube顺丰资源 韩国71
-      - YouTube顺丰资源 韩国72
-      - YouTube顺丰资源 韩国73
-      - YouTube顺丰资源 韩国74
-      - YouTube顺丰资源 韩国75
-      - YouTube顺丰资源 韩国76
-      - YouTube顺丰资源 韩国77
-      - YouTube顺丰资源 韩国78
-      - YouTube顺丰资源 韩国79
-      - YouTube顺丰资源 韩国80
-      - YouTube顺丰资源 韩国81
-      - YouTube顺丰资源 韩国82
-      - YouTube顺丰资源 德国83
-      - YouTube顺丰资源 韩国84
-      - YouTube顺丰资源 韩国85
-      - YouTube顺丰资源 韩国86
-      - YouTube顺丰资源 美国87
-      - YouTube顺丰资源 韩国88
-      - YouTube顺丰资源 韩国89
-      - YouTube顺丰资源 韩国90
-      - YouTube顺丰资源 韩国91
-      - YouTube顺丰资源 韩国92
-      - YouTube顺丰资源 韩国93
-      - YouTube顺丰资源 日本94
-      - YouTube顺丰资源 韩国95
-      - YouTube顺丰资源 韩国96
-      - YouTube顺丰资源 韩国97
-      - YouTube顺丰资源 韩国98
-      - YouTube顺丰资源 韩国99
-      - YouTube顺丰资源 韩国100
-      - YouTube顺丰资源 韩国101
-      - YouTube顺丰资源 韩国102
-      - YouTube顺丰资源 英国103
-      - YouTube顺丰资源 韩国104
-      - YouTube顺丰资源 韩国105
-      - YouTube顺丰资源 韩国106
-      - YouTube顺丰资源 韩国107
-      - YouTube顺丰资源 韩国108
-      - YouTube顺丰资源 韩国109
-      - YouTube顺丰资源 韩国110
-      - YouTube顺丰资源 韩国111
-      - YouTube顺丰资源 韩国112
-      - YouTube顺丰资源 美国113
-      - YouTube顺丰资源 韩国114
-      - YouTube顺丰资源 韩国115
-      - YouTube顺丰资源 韩国116
-      - YouTube顺丰资源 伊朗117
-      - YouTube顺丰资源 韩国118
-      - YouTube顺丰资源 中国香港119
-      - YouTube顺丰资源 美国120
-      - YouTube顺丰资源 韩国121
-      - YouTube顺丰资源 韩国122
-      - YouTube顺丰资源 韩国123
-      - YouTube顺丰资源 美国124
-      - YouTube顺丰资源 韩国125
-      - YouTube顺丰资源 英国126
-      - YouTube顺丰资源 韩国127
-      - YouTube顺丰资源 韩国128
-      - YouTube顺丰资源 美国129
-      - YouTube顺丰资源 韩国130
-      - YouTube顺丰资源 韩国131
-      - YouTube顺丰资源 韩国132
-      - YouTube顺丰资源 中国香港133
-      - YouTube顺丰资源 韩国134
-      - YouTube顺丰资源 韩国135
-      - YouTube顺丰资源 韩国136
-      - YouTube顺丰资源 保加利亚137
-      - YouTube顺丰资源 韩国138
-      - YouTube顺丰资源 英国139
-      - YouTube顺丰资源 韩国140
-      - YouTube顺丰资源 韩国141
-      - YouTube顺丰资源 新加坡142
-      - YouTube顺丰资源 日本143
-      - YouTube顺丰资源 韩国144
-      - YouTube顺丰资源 中国香港145
-      - YouTube顺丰资源 韩国146
-      - YouTube顺丰资源 韩国147
-      - YouTube顺丰资源 德国148
-      - YouTube顺丰资源 韩国149
-      - YouTube顺丰资源 韩国150
-      - YouTube顺丰资源 韩国151
-      - YouTube顺丰资源 韩国152
-      - YouTube顺丰资源 韩国153
-      - YouTube顺丰资源 伊朗154
-      - YouTube顺丰资源 美国155
-      - YouTube顺丰资源 韩国156
-      - YouTube顺丰资源 韩国157
-      - YouTube顺丰资源 美国158
-      - YouTube顺丰资源 美国159
-      - YouTube顺丰资源 韩国160
-      - YouTube顺丰资源 韩国161
-      - YouTube顺丰资源 日本162
-      - YouTube顺丰资源 俄罗斯163
-      - YouTube顺丰资源 新加坡164
-      - YouTube顺丰资源 美国165
-      - YouTube顺丰资源 韩国166
-      - YouTube顺丰资源 韩国167
-      - YouTube顺丰资源 韩国168
-      - YouTube顺丰资源 日本169
-      - YouTube顺丰资源 日本170
-      - YouTube顺丰资源 美国171
-      - YouTube顺丰资源 俄罗斯172
-      - YouTube顺丰资源 新加坡173
-      - YouTube顺丰资源 美国174
-      - YouTube顺丰资源 韩国175
-      - YouTube顺丰资源 韩国176
-      - YouTube顺丰资源 美国177
-      - YouTube顺丰资源 英国178
-      - YouTube顺丰资源 德国179
-      - YouTube顺丰资源 韩国180
-      - YouTube顺丰资源 美国181
-      - YouTube顺丰资源 美国182
-      - YouTube顺丰资源 中国香港183
-      - YouTube顺丰资源 美国184
-      - YouTube顺丰资源 中国香港185
-      - YouTube顺丰资源 韩国186
-      - YouTube顺丰资源 韩国187
-      - YouTube顺丰资源 韩国188
-      - YouTube顺丰资源 俄罗斯189
-      - YouTube顺丰资源 日本190
-      - YouTube顺丰资源 韩国191
-      - YouTube顺丰资源 韩国192
-      - YouTube顺丰资源 韩国193
-      - YouTube顺丰资源 美国194
-      - YouTube顺丰资源 韩国195
-      - YouTube顺丰资源 韩国196
-      - YouTube顺丰资源 美国197
-      - YouTube顺丰资源 韩国198
-      - YouTube顺丰资源 韩国199
-      - YouTube顺丰资源 韩国200
-      - YouTube顺丰资源 美国201
-      - YouTube顺丰资源 中国香港202
-      - YouTube顺丰资源 韩国203
-      - YouTube顺丰资源 日本204
-      - YouTube顺丰资源 伊朗205
-      - YouTube顺丰资源 韩国206
-      - YouTube顺丰资源 韩国207
-      - YouTube顺丰资源 韩国208
-      - YouTube顺丰资源 日本209
-      - YouTube顺丰资源 韩国210
-      - YouTube顺丰资源 韩国211
-      - YouTube顺丰资源 南非212
-      - YouTube顺丰资源 韩国213
-      - YouTube顺丰资源 韩国214
-      - YouTube顺丰资源 美国215
-      - YouTube顺丰资源 韩国216
-      - YouTube顺丰资源 英国217
-      - YouTube顺丰资源 中国218
-      - YouTube顺丰资源 韩国219
-      - YouTube顺丰资源 澳大利亚220
-      - YouTube顺丰资源 韩国221
-      - YouTube顺丰资源 中国香港222
-      - YouTube顺丰资源 韩国223
-      - YouTube顺丰资源 韩国224
-      - YouTube顺丰资源 韩国225
-      - YouTube顺丰资源 韩国226
-      - YouTube顺丰资源 瑞典227
-      - YouTube顺丰资源 韩国228
-      - YouTube顺丰资源 韩国229
-      - YouTube顺丰资源 乌克兰230
-      - YouTube顺丰资源 伊朗231
-      - YouTube顺丰资源 韩国232
-      - YouTube顺丰资源 韩国233
-      - YouTube顺丰资源 韩国234
-      - YouTube顺丰资源 韩国235
-      - YouTube顺丰资源 韩国236
-      - YouTube顺丰资源 韩国237
-      - YouTube顺丰资源 爱尔兰238
-      - YouTube顺丰资源 美国239
-      - YouTube顺丰资源 中国台湾240
-      - YouTube顺丰资源 韩国241
-      - YouTube顺丰资源 韩国242
-      - YouTube顺丰资源 瑞典243
-      - YouTube顺丰资源 韩国244
+      - 🇰🇷KR_1|529KB/s
+      - 🇺🇸US_1|680KB/s
+      - 🇰🇷KR_2|600KB/s
+      - 🇰🇷KR_3|1.2MB/s
+      - 🇰🇷KR_4|576KB/s
+      - 🇰🇷KR_5|729KB/s
+      - 🇰🇷KR_6|584KB/s
+      - 🇰🇷KR_7|691KB/s
+      - 🇹🇼TW_1|1.2MB/s
+      - 🇰🇷KR_8|986KB/s
+      - 🇺🇸US_2|632KB/s
+      - 🇰🇷KR_9|1.9MB/s
+      - 🇰🇷KR_10|597KB/s
+      - 🇰🇷KR_11|558KB/s
+      - 🇸🇨SC_1|6.7MB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_1%7C4.2MB%2Fs'
+      - 🇭🇰HK_1|519KB/s
+      - 🇩🇪DE_1|4.3MB/s
+      - 🇰🇷KR_12|1.1MB/s
+      - 🇸🇬SG_1|3.2MB/s
+      - 🇸🇬SG_2|690KB/s
+      - 🇭🇰HK_2|1.0MB/s
+      - 🇰🇷KR_13|520KB/s
+      - '%F0%9F%87%B3%F0%9F%87%B1NL_1%7C4.9MB%2Fs'
+      - 🇩🇪DE_2|1.0MB/s
+      - 🇻🇳VN_1|1.1MB/s
+      - 🇻🇳VN_2|609KB/s
+      - 🇻🇳VN_3|669KB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_2%7C1.9MB%2Fs'
+      - 🇩🇪DE_3|574KB/s
+      - 🇰🇷KR_14|986KB/s
+      - 🇫🇮FI_1|2.2MB/s
+      - 🇺🇸US_3|1.7MB/s
+      - 🇰🇷KR_15|2.1MB/s
+      - 🇯🇵JP_1|645KB/s
+      - 🇰🇷KR_16|533KB/s
+      - 🇰🇷KR_17|515KB/s
+      - 🇺🇸US_4|512KB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - YouTube顺丰资源 中国1
-      - YouTube顺丰资源 中国2
-      - YouTube顺丰资源 澳大利亚3
-      - YouTube顺丰资源 南非4
-      - YouTube顺丰资源 美国5
-      - YouTube顺丰资源 新加坡6
-      - YouTube顺丰资源 美国7
-      - YouTube顺丰资源 中国香港8
-      - YouTube顺丰资源 美国9
-      - YouTube顺丰资源 孟加拉国10
-      - YouTube顺丰资源 英国11
-      - YouTube顺丰资源 英国12
-      - YouTube顺丰资源 英国13
-      - YouTube顺丰资源 英国14
-      - YouTube顺丰资源 新加坡15
-      - YouTube顺丰资源 新加坡16
-      - YouTube顺丰资源 美国17
-      - YouTube顺丰资源 美国18
-      - YouTube顺丰资源 新加坡19
-      - YouTube顺丰资源 美国20
-      - YouTube顺丰资源 英国21
-      - YouTube顺丰资源 中国22
-      - YouTube顺丰资源 荷兰23
-      - YouTube顺丰资源 美国24
-      - YouTube顺丰资源 美国25
-      - YouTube顺丰资源 美国26
-      - YouTube顺丰资源 新加坡27
-      - YouTube顺丰资源 Nofound28
-      - YouTube顺丰资源 美国29
-      - YouTube顺丰资源 英国30
-      - YouTube顺丰资源 新加坡31
-      - YouTube顺丰资源 新加坡32
-      - YouTube顺丰资源 美国33
-      - YouTube顺丰资源 中国香港34
-      - YouTube顺丰资源 澳大利亚35
-      - YouTube顺丰资源 Nofound36
-      - YouTube顺丰资源 日本37
-      - YouTube顺丰资源 新加坡38
-      - YouTube顺丰资源 美国39
-      - YouTube顺丰资源 日本40
-      - YouTube顺丰资源 中国台湾41
-      - YouTube顺丰资源 英国42
-      - YouTube顺丰资源 中国台湾43
-      - YouTube顺丰资源 韩国44
-      - YouTube顺丰资源 英国45
-      - YouTube顺丰资源 日本46
-      - YouTube顺丰资源 韩国47
-      - YouTube顺丰资源 美国48
-      - YouTube顺丰资源 新加坡49
-      - YouTube顺丰资源 韩国50
-      - YouTube顺丰资源 中国51
-      - YouTube顺丰资源 韩国52
-      - YouTube顺丰资源 澳大利亚53
-      - YouTube顺丰资源 韩国54
-      - YouTube顺丰资源 韩国55
-      - YouTube顺丰资源 日本56
-      - YouTube顺丰资源 美国57
-      - YouTube顺丰资源 中国香港58
-      - YouTube顺丰资源 韩国59
-      - YouTube顺丰资源 新加坡60
-      - YouTube顺丰资源 韩国61
-      - YouTube顺丰资源 韩国62
-      - YouTube顺丰资源 韩国63
-      - YouTube顺丰资源 韩国64
-      - YouTube顺丰资源 美国65
-      - YouTube顺丰资源 韩国66
-      - YouTube顺丰资源 韩国67
-      - YouTube顺丰资源 韩国68
-      - YouTube顺丰资源 韩国69
-      - YouTube顺丰资源 瑞士70
-      - YouTube顺丰资源 韩国71
-      - YouTube顺丰资源 韩国72
-      - YouTube顺丰资源 韩国73
-      - YouTube顺丰资源 韩国74
-      - YouTube顺丰资源 韩国75
-      - YouTube顺丰资源 韩国76
-      - YouTube顺丰资源 韩国77
-      - YouTube顺丰资源 韩国78
-      - YouTube顺丰资源 韩国79
-      - YouTube顺丰资源 韩国80
-      - YouTube顺丰资源 韩国81
-      - YouTube顺丰资源 韩国82
-      - YouTube顺丰资源 德国83
-      - YouTube顺丰资源 韩国84
-      - YouTube顺丰资源 韩国85
-      - YouTube顺丰资源 韩国86
-      - YouTube顺丰资源 美国87
-      - YouTube顺丰资源 韩国88
-      - YouTube顺丰资源 韩国89
-      - YouTube顺丰资源 韩国90
-      - YouTube顺丰资源 韩国91
-      - YouTube顺丰资源 韩国92
-      - YouTube顺丰资源 韩国93
-      - YouTube顺丰资源 日本94
-      - YouTube顺丰资源 韩国95
-      - YouTube顺丰资源 韩国96
-      - YouTube顺丰资源 韩国97
-      - YouTube顺丰资源 韩国98
-      - YouTube顺丰资源 韩国99
-      - YouTube顺丰资源 韩国100
-      - YouTube顺丰资源 韩国101
-      - YouTube顺丰资源 韩国102
-      - YouTube顺丰资源 英国103
-      - YouTube顺丰资源 韩国104
-      - YouTube顺丰资源 韩国105
-      - YouTube顺丰资源 韩国106
-      - YouTube顺丰资源 韩国107
-      - YouTube顺丰资源 韩国108
-      - YouTube顺丰资源 韩国109
-      - YouTube顺丰资源 韩国110
-      - YouTube顺丰资源 韩国111
-      - YouTube顺丰资源 韩国112
-      - YouTube顺丰资源 美国113
-      - YouTube顺丰资源 韩国114
-      - YouTube顺丰资源 韩国115
-      - YouTube顺丰资源 韩国116
-      - YouTube顺丰资源 伊朗117
-      - YouTube顺丰资源 韩国118
-      - YouTube顺丰资源 中国香港119
-      - YouTube顺丰资源 美国120
-      - YouTube顺丰资源 韩国121
-      - YouTube顺丰资源 韩国122
-      - YouTube顺丰资源 韩国123
-      - YouTube顺丰资源 美国124
-      - YouTube顺丰资源 韩国125
-      - YouTube顺丰资源 英国126
-      - YouTube顺丰资源 韩国127
-      - YouTube顺丰资源 韩国128
-      - YouTube顺丰资源 美国129
-      - YouTube顺丰资源 韩国130
-      - YouTube顺丰资源 韩国131
-      - YouTube顺丰资源 韩国132
-      - YouTube顺丰资源 中国香港133
-      - YouTube顺丰资源 韩国134
-      - YouTube顺丰资源 韩国135
-      - YouTube顺丰资源 韩国136
-      - YouTube顺丰资源 保加利亚137
-      - YouTube顺丰资源 韩国138
-      - YouTube顺丰资源 英国139
-      - YouTube顺丰资源 韩国140
-      - YouTube顺丰资源 韩国141
-      - YouTube顺丰资源 新加坡142
-      - YouTube顺丰资源 日本143
-      - YouTube顺丰资源 韩国144
-      - YouTube顺丰资源 中国香港145
-      - YouTube顺丰资源 韩国146
-      - YouTube顺丰资源 韩国147
-      - YouTube顺丰资源 德国148
-      - YouTube顺丰资源 韩国149
-      - YouTube顺丰资源 韩国150
-      - YouTube顺丰资源 韩国151
-      - YouTube顺丰资源 韩国152
-      - YouTube顺丰资源 韩国153
-      - YouTube顺丰资源 伊朗154
-      - YouTube顺丰资源 美国155
-      - YouTube顺丰资源 韩国156
-      - YouTube顺丰资源 韩国157
-      - YouTube顺丰资源 美国158
-      - YouTube顺丰资源 美国159
-      - YouTube顺丰资源 韩国160
-      - YouTube顺丰资源 韩国161
-      - YouTube顺丰资源 日本162
-      - YouTube顺丰资源 俄罗斯163
-      - YouTube顺丰资源 新加坡164
-      - YouTube顺丰资源 美国165
-      - YouTube顺丰资源 韩国166
-      - YouTube顺丰资源 韩国167
-      - YouTube顺丰资源 韩国168
-      - YouTube顺丰资源 日本169
-      - YouTube顺丰资源 日本170
-      - YouTube顺丰资源 美国171
-      - YouTube顺丰资源 俄罗斯172
-      - YouTube顺丰资源 新加坡173
-      - YouTube顺丰资源 美国174
-      - YouTube顺丰资源 韩国175
-      - YouTube顺丰资源 韩国176
-      - YouTube顺丰资源 美国177
-      - YouTube顺丰资源 英国178
-      - YouTube顺丰资源 德国179
-      - YouTube顺丰资源 韩国180
-      - YouTube顺丰资源 美国181
-      - YouTube顺丰资源 美国182
-      - YouTube顺丰资源 中国香港183
-      - YouTube顺丰资源 美国184
-      - YouTube顺丰资源 中国香港185
-      - YouTube顺丰资源 韩国186
-      - YouTube顺丰资源 韩国187
-      - YouTube顺丰资源 韩国188
-      - YouTube顺丰资源 俄罗斯189
-      - YouTube顺丰资源 日本190
-      - YouTube顺丰资源 韩国191
-      - YouTube顺丰资源 韩国192
-      - YouTube顺丰资源 韩国193
-      - YouTube顺丰资源 美国194
-      - YouTube顺丰资源 韩国195
-      - YouTube顺丰资源 韩国196
-      - YouTube顺丰资源 美国197
-      - YouTube顺丰资源 韩国198
-      - YouTube顺丰资源 韩国199
-      - YouTube顺丰资源 韩国200
-      - YouTube顺丰资源 美国201
-      - YouTube顺丰资源 中国香港202
-      - YouTube顺丰资源 韩国203
-      - YouTube顺丰资源 日本204
-      - YouTube顺丰资源 伊朗205
-      - YouTube顺丰资源 韩国206
-      - YouTube顺丰资源 韩国207
-      - YouTube顺丰资源 韩国208
-      - YouTube顺丰资源 日本209
-      - YouTube顺丰资源 韩国210
-      - YouTube顺丰资源 韩国211
-      - YouTube顺丰资源 南非212
-      - YouTube顺丰资源 韩国213
-      - YouTube顺丰资源 韩国214
-      - YouTube顺丰资源 美国215
-      - YouTube顺丰资源 韩国216
-      - YouTube顺丰资源 英国217
-      - YouTube顺丰资源 中国218
-      - YouTube顺丰资源 韩国219
-      - YouTube顺丰资源 澳大利亚220
-      - YouTube顺丰资源 韩国221
-      - YouTube顺丰资源 中国香港222
-      - YouTube顺丰资源 韩国223
-      - YouTube顺丰资源 韩国224
-      - YouTube顺丰资源 韩国225
-      - YouTube顺丰资源 韩国226
-      - YouTube顺丰资源 瑞典227
-      - YouTube顺丰资源 韩国228
-      - YouTube顺丰资源 韩国229
-      - YouTube顺丰资源 乌克兰230
-      - YouTube顺丰资源 伊朗231
-      - YouTube顺丰资源 韩国232
-      - YouTube顺丰资源 韩国233
-      - YouTube顺丰资源 韩国234
-      - YouTube顺丰资源 韩国235
-      - YouTube顺丰资源 韩国236
-      - YouTube顺丰资源 韩国237
-      - YouTube顺丰资源 爱尔兰238
-      - YouTube顺丰资源 美国239
-      - YouTube顺丰资源 中国台湾240
-      - YouTube顺丰资源 韩国241
-      - YouTube顺丰资源 韩国242
-      - YouTube顺丰资源 瑞典243
-      - YouTube顺丰资源 韩国244
+      - 🇰🇷KR_1|529KB/s
+      - 🇺🇸US_1|680KB/s
+      - 🇰🇷KR_2|600KB/s
+      - 🇰🇷KR_3|1.2MB/s
+      - 🇰🇷KR_4|576KB/s
+      - 🇰🇷KR_5|729KB/s
+      - 🇰🇷KR_6|584KB/s
+      - 🇰🇷KR_7|691KB/s
+      - 🇹🇼TW_1|1.2MB/s
+      - 🇰🇷KR_8|986KB/s
+      - 🇺🇸US_2|632KB/s
+      - 🇰🇷KR_9|1.9MB/s
+      - 🇰🇷KR_10|597KB/s
+      - 🇰🇷KR_11|558KB/s
+      - 🇸🇨SC_1|6.7MB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_1%7C4.2MB%2Fs'
+      - 🇭🇰HK_1|519KB/s
+      - 🇩🇪DE_1|4.3MB/s
+      - 🇰🇷KR_12|1.1MB/s
+      - 🇸🇬SG_1|3.2MB/s
+      - 🇸🇬SG_2|690KB/s
+      - 🇭🇰HK_2|1.0MB/s
+      - 🇰🇷KR_13|520KB/s
+      - '%F0%9F%87%B3%F0%9F%87%B1NL_1%7C4.9MB%2Fs'
+      - 🇩🇪DE_2|1.0MB/s
+      - 🇻🇳VN_1|1.1MB/s
+      - 🇻🇳VN_2|609KB/s
+      - 🇻🇳VN_3|669KB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_2%7C1.9MB%2Fs'
+      - 🇩🇪DE_3|574KB/s
+      - 🇰🇷KR_14|986KB/s
+      - 🇫🇮FI_1|2.2MB/s
+      - 🇺🇸US_3|1.7MB/s
+      - 🇰🇷KR_15|2.1MB/s
+      - 🇯🇵JP_1|645KB/s
+      - 🇰🇷KR_16|533KB/s
+      - 🇰🇷KR_17|515KB/s
+      - 🇺🇸US_4|512KB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1847,261 +344,48 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-
-      - YouTube顺丰资源 中国1
-      - YouTube顺丰资源 中国2
-      - YouTube顺丰资源 澳大利亚3
-      - YouTube顺丰资源 南非4
-      - YouTube顺丰资源 美国5
-      - YouTube顺丰资源 新加坡6
-      - YouTube顺丰资源 美国7
-      - YouTube顺丰资源 中国香港8
-      - YouTube顺丰资源 美国9
-      - YouTube顺丰资源 孟加拉国10
-      - YouTube顺丰资源 英国11
-      - YouTube顺丰资源 英国12
-      - YouTube顺丰资源 英国13
-      - YouTube顺丰资源 英国14
-      - YouTube顺丰资源 新加坡15
-      - YouTube顺丰资源 新加坡16
-      - YouTube顺丰资源 美国17
-      - YouTube顺丰资源 美国18
-      - YouTube顺丰资源 新加坡19
-      - YouTube顺丰资源 美国20
-      - YouTube顺丰资源 英国21
-      - YouTube顺丰资源 中国22
-      - YouTube顺丰资源 荷兰23
-      - YouTube顺丰资源 美国24
-      - YouTube顺丰资源 美国25
-      - YouTube顺丰资源 美国26
-      - YouTube顺丰资源 新加坡27
-      - YouTube顺丰资源 Nofound28
-      - YouTube顺丰资源 美国29
-      - YouTube顺丰资源 英国30
-      - YouTube顺丰资源 新加坡31
-      - YouTube顺丰资源 新加坡32
-      - YouTube顺丰资源 美国33
-      - YouTube顺丰资源 中国香港34
-      - YouTube顺丰资源 澳大利亚35
-      - YouTube顺丰资源 Nofound36
-      - YouTube顺丰资源 日本37
-      - YouTube顺丰资源 新加坡38
-      - YouTube顺丰资源 美国39
-      - YouTube顺丰资源 日本40
-      - YouTube顺丰资源 中国台湾41
-      - YouTube顺丰资源 英国42
-      - YouTube顺丰资源 中国台湾43
-      - YouTube顺丰资源 韩国44
-      - YouTube顺丰资源 英国45
-      - YouTube顺丰资源 日本46
-      - YouTube顺丰资源 韩国47
-      - YouTube顺丰资源 美国48
-      - YouTube顺丰资源 新加坡49
-      - YouTube顺丰资源 韩国50
-      - YouTube顺丰资源 中国51
-      - YouTube顺丰资源 韩国52
-      - YouTube顺丰资源 澳大利亚53
-      - YouTube顺丰资源 韩国54
-      - YouTube顺丰资源 韩国55
-      - YouTube顺丰资源 日本56
-      - YouTube顺丰资源 美国57
-      - YouTube顺丰资源 中国香港58
-      - YouTube顺丰资源 韩国59
-      - YouTube顺丰资源 新加坡60
-      - YouTube顺丰资源 韩国61
-      - YouTube顺丰资源 韩国62
-      - YouTube顺丰资源 韩国63
-      - YouTube顺丰资源 韩国64
-      - YouTube顺丰资源 美国65
-      - YouTube顺丰资源 韩国66
-      - YouTube顺丰资源 韩国67
-      - YouTube顺丰资源 韩国68
-      - YouTube顺丰资源 韩国69
-      - YouTube顺丰资源 瑞士70
-      - YouTube顺丰资源 韩国71
-      - YouTube顺丰资源 韩国72
-      - YouTube顺丰资源 韩国73
-      - YouTube顺丰资源 韩国74
-      - YouTube顺丰资源 韩国75
-      - YouTube顺丰资源 韩国76
-      - YouTube顺丰资源 韩国77
-      - YouTube顺丰资源 韩国78
-      - YouTube顺丰资源 韩国79
-      - YouTube顺丰资源 韩国80
-      - YouTube顺丰资源 韩国81
-      - YouTube顺丰资源 韩国82
-      - YouTube顺丰资源 德国83
-      - YouTube顺丰资源 韩国84
-      - YouTube顺丰资源 韩国85
-      - YouTube顺丰资源 韩国86
-      - YouTube顺丰资源 美国87
-      - YouTube顺丰资源 韩国88
-      - YouTube顺丰资源 韩国89
-      - YouTube顺丰资源 韩国90
-      - YouTube顺丰资源 韩国91
-      - YouTube顺丰资源 韩国92
-      - YouTube顺丰资源 韩国93
-      - YouTube顺丰资源 日本94
-      - YouTube顺丰资源 韩国95
-      - YouTube顺丰资源 韩国96
-      - YouTube顺丰资源 韩国97
-      - YouTube顺丰资源 韩国98
-      - YouTube顺丰资源 韩国99
-      - YouTube顺丰资源 韩国100
-      - YouTube顺丰资源 韩国101
-      - YouTube顺丰资源 韩国102
-      - YouTube顺丰资源 英国103
-      - YouTube顺丰资源 韩国104
-      - YouTube顺丰资源 韩国105
-      - YouTube顺丰资源 韩国106
-      - YouTube顺丰资源 韩国107
-      - YouTube顺丰资源 韩国108
-      - YouTube顺丰资源 韩国109
-      - YouTube顺丰资源 韩国110
-      - YouTube顺丰资源 韩国111
-      - YouTube顺丰资源 韩国112
-      - YouTube顺丰资源 美国113
-      - YouTube顺丰资源 韩国114
-      - YouTube顺丰资源 韩国115
-      - YouTube顺丰资源 韩国116
-      - YouTube顺丰资源 伊朗117
-      - YouTube顺丰资源 韩国118
-      - YouTube顺丰资源 中国香港119
-      - YouTube顺丰资源 美国120
-      - YouTube顺丰资源 韩国121
-      - YouTube顺丰资源 韩国122
-      - YouTube顺丰资源 韩国123
-      - YouTube顺丰资源 美国124
-      - YouTube顺丰资源 韩国125
-      - YouTube顺丰资源 英国126
-      - YouTube顺丰资源 韩国127
-      - YouTube顺丰资源 韩国128
-      - YouTube顺丰资源 美国129
-      - YouTube顺丰资源 韩国130
-      - YouTube顺丰资源 韩国131
-      - YouTube顺丰资源 韩国132
-      - YouTube顺丰资源 中国香港133
-      - YouTube顺丰资源 韩国134
-      - YouTube顺丰资源 韩国135
-      - YouTube顺丰资源 韩国136
-      - YouTube顺丰资源 保加利亚137
-      - YouTube顺丰资源 韩国138
-      - YouTube顺丰资源 英国139
-      - YouTube顺丰资源 韩国140
-      - YouTube顺丰资源 韩国141
-      - YouTube顺丰资源 新加坡142
-      - YouTube顺丰资源 日本143
-      - YouTube顺丰资源 韩国144
-      - YouTube顺丰资源 中国香港145
-      - YouTube顺丰资源 韩国146
-      - YouTube顺丰资源 韩国147
-      - YouTube顺丰资源 德国148
-      - YouTube顺丰资源 韩国149
-      - YouTube顺丰资源 韩国150
-      - YouTube顺丰资源 韩国151
-      - YouTube顺丰资源 韩国152
-      - YouTube顺丰资源 韩国153
-      - YouTube顺丰资源 伊朗154
-      - YouTube顺丰资源 美国155
-      - YouTube顺丰资源 韩国156
-      - YouTube顺丰资源 韩国157
-      - YouTube顺丰资源 美国158
-      - YouTube顺丰资源 美国159
-      - YouTube顺丰资源 韩国160
-      - YouTube顺丰资源 韩国161
-      - YouTube顺丰资源 日本162
-      - YouTube顺丰资源 俄罗斯163
-      - YouTube顺丰资源 新加坡164
-      - YouTube顺丰资源 美国165
-      - YouTube顺丰资源 韩国166
-      - YouTube顺丰资源 韩国167
-      - YouTube顺丰资源 韩国168
-      - YouTube顺丰资源 日本169
-      - YouTube顺丰资源 日本170
-      - YouTube顺丰资源 美国171
-      - YouTube顺丰资源 俄罗斯172
-      - YouTube顺丰资源 新加坡173
-      - YouTube顺丰资源 美国174
-      - YouTube顺丰资源 韩国175
-      - YouTube顺丰资源 韩国176
-      - YouTube顺丰资源 美国177
-      - YouTube顺丰资源 英国178
-      - YouTube顺丰资源 德国179
-      - YouTube顺丰资源 韩国180
-      - YouTube顺丰资源 美国181
-      - YouTube顺丰资源 美国182
-      - YouTube顺丰资源 中国香港183
-      - YouTube顺丰资源 美国184
-      - YouTube顺丰资源 中国香港185
-      - YouTube顺丰资源 韩国186
-      - YouTube顺丰资源 韩国187
-      - YouTube顺丰资源 韩国188
-      - YouTube顺丰资源 俄罗斯189
-      - YouTube顺丰资源 日本190
-      - YouTube顺丰资源 韩国191
-      - YouTube顺丰资源 韩国192
-      - YouTube顺丰资源 韩国193
-      - YouTube顺丰资源 美国194
-      - YouTube顺丰资源 韩国195
-      - YouTube顺丰资源 韩国196
-      - YouTube顺丰资源 美国197
-      - YouTube顺丰资源 韩国198
-      - YouTube顺丰资源 韩国199
-      - YouTube顺丰资源 韩国200
-      - YouTube顺丰资源 美国201
-      - YouTube顺丰资源 中国香港202
-      - YouTube顺丰资源 韩国203
-      - YouTube顺丰资源 日本204
-      - YouTube顺丰资源 伊朗205
-      - YouTube顺丰资源 韩国206
-      - YouTube顺丰资源 韩国207
-      - YouTube顺丰资源 韩国208
-      - YouTube顺丰资源 日本209
-      - YouTube顺丰资源 韩国210
-      - YouTube顺丰资源 韩国211
-      - YouTube顺丰资源 南非212
-      - YouTube顺丰资源 韩国213
-      - YouTube顺丰资源 韩国214
-      - YouTube顺丰资源 美国215
-      - YouTube顺丰资源 韩国216
-      - YouTube顺丰资源 英国217
-      - YouTube顺丰资源 中国218
-      - YouTube顺丰资源 韩国219
-      - YouTube顺丰资源 澳大利亚220
-      - YouTube顺丰资源 韩国221
-      - YouTube顺丰资源 中国香港222
-      - YouTube顺丰资源 韩国223
-      - YouTube顺丰资源 韩国224
-      - YouTube顺丰资源 韩国225
-      - YouTube顺丰资源 韩国226
-      - YouTube顺丰资源 瑞典227
-      - YouTube顺丰资源 韩国228
-      - YouTube顺丰资源 韩国229
-      - YouTube顺丰资源 乌克兰230
-      - YouTube顺丰资源 伊朗231
-      - YouTube顺丰资源 韩国232
-      - YouTube顺丰资源 韩国233
-      - YouTube顺丰资源 韩国234
-      - YouTube顺丰资源 韩国235
-      - YouTube顺丰资源 韩国236
-      - YouTube顺丰资源 韩国237
-      - YouTube顺丰资源 爱尔兰238
-      - YouTube顺丰资源 美国239
-      - YouTube顺丰资源 中国台湾240
-      - YouTube顺丰资源 韩国241
-      - YouTube顺丰资源 韩国242
-      - YouTube顺丰资源 瑞典243
-      - YouTube顺丰资源 韩国244
+      - 🇰🇷KR_1|529KB/s
+      - 🇺🇸US_1|680KB/s
+      - 🇰🇷KR_2|600KB/s
+      - 🇰🇷KR_3|1.2MB/s
+      - 🇰🇷KR_4|576KB/s
+      - 🇰🇷KR_5|729KB/s
+      - 🇰🇷KR_6|584KB/s
+      - 🇰🇷KR_7|691KB/s
+      - 🇹🇼TW_1|1.2MB/s
+      - 🇰🇷KR_8|986KB/s
+      - 🇺🇸US_2|632KB/s
+      - 🇰🇷KR_9|1.9MB/s
+      - 🇰🇷KR_10|597KB/s
+      - 🇰🇷KR_11|558KB/s
+      - 🇸🇨SC_1|6.7MB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_1%7C4.2MB%2Fs'
+      - 🇭🇰HK_1|519KB/s
+      - 🇩🇪DE_1|4.3MB/s
+      - 🇰🇷KR_12|1.1MB/s
+      - 🇸🇬SG_1|3.2MB/s
+      - 🇸🇬SG_2|690KB/s
+      - 🇭🇰HK_2|1.0MB/s
+      - 🇰🇷KR_13|520KB/s
+      - '%F0%9F%87%B3%F0%9F%87%B1NL_1%7C4.9MB%2Fs'
+      - 🇩🇪DE_2|1.0MB/s
+      - 🇻🇳VN_1|1.1MB/s
+      - 🇻🇳VN_2|609KB/s
+      - 🇻🇳VN_3|669KB/s
+      - '%F0%9F%87%AB%F0%9F%87%B7FR_2%7C1.9MB%2Fs'
+      - 🇩🇪DE_3|574KB/s
+      - 🇰🇷KR_14|986KB/s
+      - 🇫🇮FI_1|2.2MB/s
+      - 🇺🇸US_3|1.7MB/s
+      - 🇰🇷KR_15|2.1MB/s
+      - 🇯🇵JP_1|645KB/s
+      - 🇰🇷KR_16|533KB/s
+      - 🇰🇷KR_17|515KB/s
+      - 🇺🇸US_4|512KB/s
 rules:
-# 本地/局域网地址
-# 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
-# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
-# 本地/局域网地址
-# Router managed 路由器管理域名
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
-  - DOMAIN-SUFFIX,lan,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,localhost,🎯 全球直连
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
@@ -2110,13 +394,10 @@ rules:
   - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
   - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
   - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
   - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
   - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
-  - DOMAIN,instant.arubanetworks.com,🎯 全球直连
-  - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
   - DOMAIN,router.asus.com,🎯 全球直连
   - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
@@ -2125,17 +406,9 @@ rules:
   - DOMAIN-SUFFIX,p.to,🎯 全球直连
   - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
   - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
-  - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
   - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
   - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
-  - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
-# 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
-# 广告关键词
-# 广告联盟-国内****************
-# 广告联盟-国外****************
-# 垃圾站点****************
-# 运营商广告****************
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
@@ -2163,6 +436,25 @@ rules:
   - DOMAIN-KEYWORD,usage,🛑 全球拦截
   - DOMAIN-KEYWORD,wlmonitor,🛑 全球拦截
   - DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截
+  - DOMAIN-SUFFIX,admob.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,ads.gmodules.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,ads.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,adservice.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,afd.l.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,badad.googleplex.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,csi.gstatic.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,doubleclick.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,doubleclick.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,google-analytics.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,googleadservices.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,googleadsserving.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,googlecommerce.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,googlesyndication.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,mobileads.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,pagead-tpc.l.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,pagead.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,pagead.l.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,service.urchin.com,🛑 全球拦截
   - DOMAIN-SUFFIX,09mk.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,100peng.com,🛑 全球拦截
   - DOMAIN-SUFFIX,114la.com,🛑 全球拦截
@@ -2322,6 +614,7 @@ rules:
   - DOMAIN-SUFFIX,edigitalsurvey.com,🛑 全球拦截
   - DOMAIN-SUFFIX,eduancm.com,🛑 全球拦截
   - DOMAIN-SUFFIX,emarbox.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,epsilon.com,🛑 全球拦截
   - DOMAIN-SUFFIX,exosrv.com,🛑 全球拦截
   - DOMAIN-SUFFIX,fancyapi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,feitian001.com,🛑 全球拦截
@@ -2397,6 +690,7 @@ rules:
   - DOMAIN-SUFFIX,mediaplex.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mediav.com,🛑 全球拦截
   - DOMAIN-SUFFIX,megajoy.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,meiqia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mgogo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,miaozhen.com,🛑 全球拦截
   - DOMAIN-SUFFIX,microad-cn.com,🛑 全球拦截
@@ -2412,7 +706,6 @@ rules:
   - DOMAIN-SUFFIX,mobgi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mobisage.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,mobvista.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,moogos.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mopub.com,🛑 全球拦截
   - DOMAIN-SUFFIX,moquanad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mpush.cn,🛑 全球拦截
@@ -2507,7 +800,6 @@ rules:
   - DOMAIN-SUFFIX,uuzu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,uyunad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vamaker.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,vlion.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,voiceads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,voiceads.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vpon.com,🛑 全球拦截
@@ -2609,6 +901,7 @@ rules:
   - DOMAIN-SUFFIX,criteo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,criteo.net,🛑 全球拦截
   - DOMAIN-SUFFIX,csbew.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,demdex.net,🛑 全球拦截
   - DOMAIN-SUFFIX,directrev.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dumedia.ru,🛑 全球拦截
   - DOMAIN-SUFFIX,effectivemeasure.com,🛑 全球拦截
@@ -2730,66 +1023,6 @@ rules:
   - DOMAIN-SUFFIX,go.10086.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,hivedata.cc,🛑 全球拦截
   - DOMAIN-SUFFIX,navi.gd.chinamobile.com,🛑 全球拦截
-# 包含常用应用的各种去广告规则。
-# 可能有轻微副作用，可放心使用。（如果网站功能和广告冲突，会删掉去广告规则）
-# 163
-# 17173
-# 178
-# 2345
-# 360
-# 58
-# Alibaba
-# Adobe
-# Apple
-# AutoHome
-# Baidu
-# Book-app 起点 掌阅 书旗 宜搜
-# ByteDance 头条抖音
-# Dangdang
-# Duomi
-# Facebook
-# Fang
-# Google
-# JD
-# Kugou
-# Kuwo
-# Meizu flyme 魅族
-# Meitu
-# Miui 小米
-# Moji
-# Qingting.fm
-# QQ
-# RenRen
-# Sina
-# Sougou
-# Teleplus
-# Twitter
-# UC ali
-# Weifeng
-# WPS Office
-# Wi-Fi key
-# Ximalaya 喜马拉雅
-# Xunlei 迅雷app&看看
-# Yahoo
-# Zhihu
-# Ads in Video apps 下面都是 ********************
-# 6间房
-# Baofeng 暴风影音
-# Douyu
-# Fenghuang 凤凰TV
-# Funshion 风行
-# iqiyi PPS 爱奇艺
-# Ku6 酷6
-# LeTV 乐视
-# MGTV 芒果TV
-# Sohu 搜狐
-# PPTV、PPLive
-# QQ Live
-# Youku & Tudou
-# Youtube
-# Others ads in Video apps
-# Ads in Video apps end 上面都是 ********************
-# 常用网站广告
   - DOMAIN-SUFFIX,a.youdao.com,🍃 应用净化
   - DOMAIN-SUFFIX,adgeo.corp.163.com,🍃 应用净化
   - DOMAIN-SUFFIX,analytics.126.net,🍃 应用净化
@@ -2899,10 +1132,12 @@ rules:
   - DOMAIN-SUFFIX,activate-sea.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,activate-sjc0.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,activate.adobe.com,🍃 应用净化
+  - DOMAIN-SUFFIX,activate.wip3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns-2.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns-3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,ereg.adobe.com,🍃 应用净化
+  - DOMAIN-SUFFIX,ereg.wip3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,geo2.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,hl2rcv.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,hlrcv.stage.adobe.com,🍃 应用净化
@@ -2957,6 +1192,7 @@ rules:
   - DOMAIN-SUFFIX,baikebcs.bdimg.com,🍃 应用净化
   - DOMAIN-SUFFIX,banlv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bar.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,bdimg.share.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bdplus.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,btlaunch.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,c.baidu.cn,🍃 应用净化
@@ -2974,6 +1210,7 @@ rules:
   - DOMAIN-SUFFIX,click.hm.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,click.qianqian.com,🍃 应用净化
   - DOMAIN-SUFFIX,cm.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,cm.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidustatic.com,🍃 应用净化
@@ -3076,10 +1313,13 @@ rules:
   - DOMAIN-SUFFIX,rp.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,rplog.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,s.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,s.cpro.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,sa.tuisong.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sclick.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sestat.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shadu.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,share.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,snippet.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sobar.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sobartop.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,spcode.baidu.cn,🍃 应用净化
@@ -3096,6 +1336,7 @@ rules:
   - DOMAIN-SUFFIX,tuijian.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,tuisong.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,tuisong.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,uat1.bfsspadserver.8le8le.com,🍃 应用净化
   - DOMAIN-SUFFIX,ubmcmm.baidustatic.com,🍃 应用净化
   - DOMAIN-SUFFIX,ucstat.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,ucstat.baidu.com,🍃 应用净化
@@ -3120,6 +1361,7 @@ rules:
   - DOMAIN-SUFFIX,wisepush.video.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,wm.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,wm.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,wn.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,znsv.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,znsv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,zz.bdstatic.com,🍃 应用净化
@@ -3170,11 +1412,7 @@ rules:
   - DOMAIN-SUFFIX,ic.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,log.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,nativeapp.toutiao.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pangolin.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,partner.toutiao.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pglstatp-toutiao.com,🍃 应用净化
   - DOMAIN-SUFFIX,sm.toutiao.com,🍃 应用净化
   - DOMAIN-SUFFIX,a.dangdang.com,🍃 应用净化
   - DOMAIN-SUFFIX,click.dangdang.com,🍃 应用净化
@@ -3304,6 +1542,7 @@ rules:
   - DOMAIN-SUFFIX,jellyfish.pandora.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,migc.g.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,migcreport.g.mi.com,🍃 应用净化
+  - DOMAIN-SUFFIX,mis.g.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,notice.game.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,ppurifier.game.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,r.browser.miui.com,🍃 应用净化
@@ -3507,6 +1746,7 @@ rules:
   - DOMAIN-SUFFIX,ws.progrss.yahoo.com,🍃 应用净化
   - DOMAIN-SUFFIX,yads.yahoo.co.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ybp.yahoo.com,🍃 应用净化
+  - DOMAIN-SUFFIX,sugar.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shrek.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,simba.6.cn,🍃 应用净化
@@ -3695,6 +1935,7 @@ rules:
   - DOMAIN-SUFFIX,couchcoaster.jp,🍃 应用净化
   - DOMAIN-SUFFIX,delivery.dmkt-sp.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ehg-youtube.hitbox.com,🍃 应用净化
+  - DOMAIN-SUFFIX,m-78.jp,🍃 应用净化
   - DOMAIN-SUFFIX,nichibenren.or.jp,🍃 应用净化
   - DOMAIN-SUFFIX,nicorette.co.kr,🍃 应用净化
   - DOMAIN-SUFFIX,ssl-youtube.2cnt.net,🍃 应用净化
@@ -3705,6 +1946,8 @@ rules:
   - DOMAIN-SUFFIX,ads.wasu.tv,🍃 应用净化
   - DOMAIN-SUFFIX,afp.wasu.tv,🍃 应用净化
   - DOMAIN-SUFFIX,c.algovid.com,🍃 应用净化
+  - DOMAIN-SUFFIX,cc.xtgreat.com,🍃 应用净化
+  - DOMAIN-SUFFIX,d.dsp.imageter.com,🍃 应用净化
   - DOMAIN-SUFFIX,gg.jtertp.com,🍃 应用净化
   - DOMAIN-SUFFIX,gridsum-vd.cntv.cn,🍃 应用净化
   - DOMAIN-SUFFIX,kwflvcdn.000dn.com,🍃 应用净化
@@ -3816,8 +2059,6 @@ rules:
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
   - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
-# Google China
-#DOMAIN-SUFFIX,translate.googleapis.com
   - DOMAIN-SUFFIX,265.com,🎯 全球直连
   - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -3849,32 +2090,13 @@ rules:
   - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
   - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ssl.gstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
-# 内容：SteamCN
-# 数量：15条
-  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
-  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
-  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
-  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
-  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
-  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
-  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
-  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
-  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
-  - DOMAIN,wmsjsteam.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
-# Microsoft Services
-# optimized from https://gist.github.com/TTTPOB/ce93fb3b04ba2f21880b09427442d831
-# source: https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
   - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
   - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
@@ -3951,13 +2173,10 @@ rules:
   - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
-# Apple
-# 一般国内Apple肯定正常,不需要开代理
   - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
   - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
   - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
   - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
-  - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
@@ -3981,93 +2200,28 @@ rules:
   - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
-# 内容：国外媒体列表
-# 更新：2023-01-15 22:06:33
-# 数量：330条
-# ABC
-# AbemaTV
-# All4
-# Amazon
-# AppleNews
-# AppleTV
-# BBCiPlayer
-# Bahamut
-# DAZN
-# Deezer
-# DiscoveryPlus
-# DisneyPlus
-# EncoreTVB
-# FoxNow
-# HBO
-# HBO_GO_HKG
-# HWTV
-# Hulu
-# HuluJapan
-# ITV
-# JOOX
-# Japonx
-# KKBOX
-# KKTV
-# LiTV
-# LineTV
-# My5
-# MyTVSuper
-# Netflix
-# Niconico
-# PBS
-# Pandora
-# Pornhub
-# Qobuz
-# SoundCloud
-# Spotify
-# TIDAL
-# TaiWanGood 台湾好
-# TikTok
-# Twitch
-# ViuTV
-# YouTube
-# YouTubeMusic
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
-#   - USER-AGENT,AbemaTV*,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
-  - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
-  - DOMAIN-SUFFIX,abema-tv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,hayabusa.media,🌍 国外媒体
-#   - USER-AGENT,All4*,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
-  - DOMAIN,atv-ps.amazon.com,🌍 国外媒体
-  - DOMAIN,avodmp4s3ww-a.akamaihd.net,🌍 国外媒体
-  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d1xfray82862hr.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d25xi40x97liuc.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d27xxe7juh1us6.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d3196yreox78o9.cloudfront.net,🌍 国外媒体
-  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,🌍 国外媒体
-  - DOMAIN,ktpx.amazon.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,aboutamazon.com,🌍 国外媒体
+  - DOMAIN, atv-ps.amazon.com,🌍 国外媒体
+  - DOMAIN, fls-na.amazon.com,🌍 国外媒体
+  - DOMAIN-SUFFIX, media-amazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazon.jobs,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazonuniversity.jobs,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazonaws.co.uk,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
-#   - URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
-#   - USER-AGENT,AppleNews*,🌍 国外媒体
-#   - USER-AGENT,com.apple.news*,🌍 国外媒体
+  - DOMAIN-SUFFIX,llnwd.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,primevideo.com,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tv.apple.com,🌍 国外媒体
-#   - USER-AGENT,BBCiPlayer*,🌍 国外媒体
   - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
   - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
   - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 国外媒体
@@ -4082,32 +2236,51 @@ rules:
   - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
-#   - USER-AGENT,Anime*,🌍 国外媒体
-  - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
   - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
-#   - USER-AGENT,DAZN*,🌍 国外媒体
+  - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
+  - DOMAIN-KEYWORD,livedazn,🌍 国外媒体
+  - DOMAIN-KEYWORD,vod2dazn,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
+  - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
+  - DOMAIN,players.brightcove.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,amplify.outbrain.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,bluekai.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,control.kochava.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cws.conviva.com,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc1-voddash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc1live21715dazn.akamaized.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc2-live2dash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc2-live2hls-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dca-livedash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dca-voddash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dca-vodhls-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dcb-livedash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dcb-voddash-perform.secure.footprint.net,🌍 国外媒体
   - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
   - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,perfops.doracdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,s.llnwi.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,s.yimg.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,secure.footprint.net,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-#   - USER-AGENT,Deezer*,🌍 国外媒体
+  - DOMAIN-SUFFIX,urbanairship.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,vjs.zencdn.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,widevine.entitlement.us.theplatform.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,yahoo.co.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-#   - USER-AGENT,Disney*,🌍 国外媒体
-#   - USER-AGENT,Disney+*,🌍 国外媒体
   - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
   - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
   - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -4128,26 +2301,33 @@ rules:
   - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
   - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
-#   - USER-AGENT,encoreTVB*,🌍 国外媒体
   - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,content.jwplatform.com,🌍 国外媒体
   - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
   - DOMAIN,videos-f.jwpsrv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
-#   - USER-AGENT,FOX%20NOW*,🌍 国外媒体
   - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-#   - USER-AGENT,HBO%20NOW*,🌍 国外媒体
-#   - USER-AGENT,HBOMAX*,🌍 国外媒体
+  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
+  - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
+  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
+  - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
+  - DOMAIN,hboasia1-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia2-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia3-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia4-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia5-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,players.brightcove.net,🌍 国外媒体
+  - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
-#   - USER-AGENT,HBO%20GO%20PROD*,🌍 国外媒体
   - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
-  - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
@@ -4163,10 +2343,8 @@ rules:
   - DOMAIN,hbounify-prod.evergent.com,🌍 国外媒体
   - DOMAIN,players.brightcove.net,🌍 国外媒体
   - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
-#   - USER-AGENT,HWTVMobile*,🌍 国外媒体
   - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,cws-hulu.conviva.com,🌍 国外媒体
@@ -4182,12 +2360,9 @@ rules:
   - DOMAIN-SUFFIX,prod.hjholdings.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,streaks.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,yb.uncn.jp,🌍 国外媒体
-#   - USER-AGENT,ITV_Player*,🌍 国外媒体
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
   - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
-#   - USER-AGENT,JOOX*,🌍 国外媒体
-#   - USER-AGENT,WeMusic*,🌍 国外媒体
   - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
   - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
   - DOMAIN-KEYWORD,japonx,🌍 国外媒体
@@ -4203,35 +2378,24 @@ rules:
   - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
-#   - USER-AGENT,KKTV*,🌍 国外媒体
-#   - USER-AGENT,com.kktv.ios.kktv*,🌍 国外媒体
   - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
-  - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
-#   - USER-AGENT,LINE%20TV*,🌍 国外媒体
-#   - USER-AGENT,LINE*,🌍 国外媒体
   - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,profile.line-scdn.net,🌍 国外媒体
-#   - USER-AGENT,My5*,🌍 国外媒体
   - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
   - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
-#   - USER-AGENT,mytv*,🌍 国外媒体
-  - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
-  - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
-#   - USER-AGENT,Argo*,🌍 国外媒体
-  - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
-  - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
+  - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🌍 国外媒体
   - DOMAIN,netflix.com.edgesuite.net,🌍 国外媒体
   - DOMAIN-SUFFIX,fast.com,🌍 国外媒体
   - DOMAIN-SUFFIX,netflix.com,🌍 国外媒体
@@ -4253,9 +2417,12 @@ rules:
   - DOMAIN-SUFFIX,nflxvideo.net,🌍 国外媒体
   - IP-CIDR,8.41.4.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,23.246.0.0/18,🌍 国外媒体,no-resolve
+  - IP-CIDR,34.210.42.111/32,🌍 国外媒体,no-resolve
   - IP-CIDR,37.77.184.0/21,🌍 国外媒体,no-resolve
   - IP-CIDR,38.72.126.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,45.57.0.0/17,🌍 国外媒体,no-resolve
+  - IP-CIDR,52.89.124.203/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,54.148.37.5/32,🌍 国外媒体,no-resolve
   - IP-CIDR,64.120.128.0/17,🌍 国外媒体,no-resolve
   - IP-CIDR,66.197.128.0/17,🌍 国外媒体,no-resolve
   - IP-CIDR,69.53.224.0/19,🌍 国外媒体,no-resolve
@@ -4268,24 +2435,19 @@ rules:
   - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
   - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
   - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
-#   - USER-AGENT,Niconico*,🌍 国外媒体
   - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
   - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
-#   - USER-AGENT,PBS*,🌍 国外媒体
   - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
-#   - USER-AGENT,Pandora*,🌍 国外媒体
   - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
   - DOMAIN-SUFFIX,qobuz.com,🌍 国外媒体
-#   - USER-AGENT,SoundCloud*,🌍 国外媒体
   - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
   - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
-#   - USER-AGENT,Spotify*,🌍 国外媒体
   - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
   - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
@@ -4294,15 +2456,12 @@ rules:
   - DOMAIN-SUFFIX,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.net,🌍 国外媒体
-#   - USER-AGENT,TIDAL*,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
-#   - USER-AGENT,TaiwanGood*,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-#   - USER-AGENT,TikTok*,🌍 国外媒体
-  - DOMAIN-KEYWORD,tiktokcdn-,🌍 国外媒体
+  - DOMAIN-KEYWORD,-tiktokcdn-com,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
@@ -4313,53 +2472,33 @@ rules:
   - DOMAIN-SUFFIX,tiktokcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tiktokv.com,🌍 国外媒体
   - DOMAIN-KEYWORD,ttvnw,🌍 国外媒体
-  - DOMAIN-SUFFIX,ext-twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
   - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
-#   - USER-AGENT,Viu*,🌍 国外媒体
-  - PROCESS-NAME,com.viu.pad,🌍 国外媒体
-  - PROCESS-NAME,com.viu.phone,🌍 国外媒体
-  - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
   - DOMAIN,api.viu.now.com,🌍 国外媒体
   - DOMAIN,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
   - DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
   - DOMAIN,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,bootstrapcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,firebaseio.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,jwpcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,jwplayer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,nowe.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
-#   - USER-AGENT,*youtube*,🌍 国外媒体
-#   - USER-AGENT,YouTube*,🌍 国外媒体
-#   - USER-AGENT,com.google.ios.youtube*,🌍 国外媒体
   - DOMAIN-KEYWORD,youtube,🌍 国外媒体
   - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
   - DOMAIN-SUFFIX,googlevideo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,gvt2.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,withyoutube.com,🌍 国外媒体
   - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtube-nocookie.com,🌍 国外媒体
   - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtubeeducation.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtubegaming.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
-#   - USER-AGENT,*YouTubeMusic*,🌍 国外媒体
-#   - USER-AGENT,*com.google.ios.youtubemusic*,🌍 国外媒体
-#   - USER-AGENT,YouTubeMusic*,🌍 国外媒体
-#   - USER-AGENT,com.google.ios.youtubemusic*,🌍 国外媒体
-  - DOMAIN,music.youtube.com,🌍 国外媒体
-# Telegram
-#PROCESS-NAME,Telegram.exe
-#PROCESS-NAME,org.telegram.messenger
   - DOMAIN-SUFFIX,t.me,📲 电报信息
   - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
   - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
@@ -4372,48 +2511,13 @@ rules:
   - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
-# 长风网站，自动注入
-  - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
-  - DOMAIN-SUFFIX,cff.pw,🚀 节点选择
-  - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
-  - DOMAIN-SUFFIX,cfmem.com,🚀 节点选择
-# 代理列表
-# MyList && Other
-# 国外域名
-# 国外域名关键字
-# Top Blocked Sites
-# Amazon
-# BBC
-# Developer 开发者常用国外网站、镜像和论坛
-# Discord
-# Facebook
-# Github
-# Google
-# GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
-# Instagram
-# Kakao Talk
-# Line
-# OneDrive
-#DOMAIN-SUFFIX,aria.microsoft.com
-# Porn
-# Pixiv
-# Spark
-# Steam
-# TapTap
-# Twitch
-# Twitter
-# Telegram
-# TeraBox
-# Whatsapp
-# Wikipedia 维基相关域名
-#飞流直播
-#华文电视
-# VikACG
   - DOMAIN-SUFFIX,1password.com,🚀 节点选择
+  - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
+  - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
   - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
   - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
   - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
-  - DOMAIN-SUFFIX,chat.openai.com,🚀 节点选择
+  - DOMAIN-SUFFIX,cccat.io,🚀 节点选择
   - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
   - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
   - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
@@ -4421,16 +2525,16 @@ rules:
   - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
   - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
   - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
-  - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
   - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
   - DOMAIN-SUFFIX,notion.so,🚀 节点选择
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
   - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
   - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
   - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
   - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
   - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
+  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,🚀 节点选择
+  - DOMAIN-SUFFIX,yunpanjingling.com,🚀 节点选择
   - DOMAIN-SUFFIX,eu,🚀 节点选择
   - DOMAIN-SUFFIX,hk,🚀 节点选择
   - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -4492,6 +2596,7 @@ rules:
   - DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
   - DOMAIN-SUFFIX,comodoca.com,🚀 节点选择
   - DOMAIN-SUFFIX,daum.net,🚀 节点选择
+  - DOMAIN-SUFFIX,demdex.net,🚀 节点选择
   - DOMAIN-SUFFIX,deskconnect.com,🚀 节点选择
   - DOMAIN-SUFFIX,disqus.com,🚀 节点选择
   - DOMAIN-SUFFIX,disquscdn.com,🚀 节点选择
@@ -4749,23 +2854,7 @@ rules:
   - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
   - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
   - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
-  - DOMAIN-SUFFIX,underlords.com,🚀 节点选择
-  - DOMAIN-SUFFIX,valvesoftware.com,🚀 节点选择
-  - DOMAIN-SUFFIX,playartifact.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
   - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamgames.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamserver.net,🚀 节点选择
-  - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
-  - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
-  - DOMAIN,steamcdn-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamuserimages-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steampipe.akamaized.net,🚀 节点选择
   - DOMAIN-SUFFIX,tap.io,🚀 节点选择
   - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
   - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
@@ -4821,55 +2910,6 @@ rules:
   - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
-  - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
-  - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
-# 直连列表
-# MyList
-# CN域名直连(中国|公司|网络)
-# 中国国内常见域名关键词直连
-# 360
-# 4399
-# 58
-# Alibaba
-# Baidu
-# Bilibili
-# Blizzard
-# ByteDance
-# CCTV
-# ChinaNet
-# DiDi
-# Douyu 斗鱼
-# Epic
-# HuaWei
-# Iflytek 科大讯飞
-# Iqiyi
-# JD
-# Kingsoft
-# Kuaishou 快手
-# Meitu
-# LeTV 乐视
-# MGTV 芒果TV
-# MI
-# NetEase
-# PPTV、PPLive
-# PDD 拼多多
-# Sina
-# Sohu Sogo
-# Sony
-# SteamCN
-# Tencent
-# Vip 唯品会
-# Ximalaya 喜马拉雅
-# Xunlei 迅雷
-# YYeTs 人人影视
-# Private Tracker
-# TeamViewer
-# Public Direct CDN 公共直连
-#DOMAIN-SUFFIX,ajax.aspnetcdn.com
-#DOMAIN-SUFFIX,ajax.cloudflare.com
-#DOMAIN-SUFFIX,cdnjs.cloudflare.com
-#DOMAIN-SUFFIX,code.jquery.com
-# AccelerateDirectSites
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
@@ -4882,13 +2922,10 @@ rules:
   - DOMAIN-SUFFIX,msftconnecttest.com,🎯 全球直连
   - DOMAIN-SUFFIX,msftncsi.com,🎯 全球直连
   - DOMAIN-SUFFIX,qupu123.com,🎯 全球直连
-  - DOMAIN-SUFFIX,pdfwifi.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zhenguanyu.biz,🎯 全球直连
-  - DOMAIN-SUFFIX,zhenguanyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,cn,🎯 全球直连
-  - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
-  - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
-  - DOMAIN-SUFFIX,xn--io0a7i,🎯 全球直连
+  - DOMAIN-SUFFIX,中国,🎯 全球直连
+  - DOMAIN-SUFFIX,公司,🎯 全球直连
+  - DOMAIN-SUFFIX,网络,🎯 全球直连
   - DOMAIN-KEYWORD,-cn,🎯 全球直连
   - DOMAIN-KEYWORD,360buy,🎯 全球直连
   - DOMAIN-KEYWORD,alicdn,🎯 全球直连
@@ -4900,6 +2937,7 @@ rules:
   - DOMAIN-KEYWORD,ccgslb,🎯 全球直连
   - DOMAIN-KEYWORD,chinacache,🎯 全球直连
   - DOMAIN-KEYWORD,duobao,🎯 全球直连
+  - DOMAIN-KEYWORD,duolingo,🎯 全球直连
   - DOMAIN-KEYWORD,jdpay,🎯 全球直连
   - DOMAIN-KEYWORD,moke,🎯 全球直连
   - DOMAIN-KEYWORD,qhimg,🎯 全球直连
@@ -4975,6 +3013,7 @@ rules:
   - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bilibili.tv,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
@@ -4985,29 +3024,13 @@ rules:
   - DOMAIN-SUFFIX,battle.net,🎯 全球直连
   - DOMAIN-SUFFIX,battlenet.com,🎯 全球直连
   - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
-  - DOMAIN-SUFFIX,amemv.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bdxiguaimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bdxiguastatic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,byted-static.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.net,🎯 全球直连
   - DOMAIN-SUFFIX,bytedns.net,🎯 全球直连
-  - DOMAIN-SUFFIX,bytednsdoc.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytegoofy.com,🎯 全球直连
   - DOMAIN-SUFFIX,byteimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytescm.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytetos.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytexservice.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyin.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyinpic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyinstatic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyinvod.com,🎯 全球直连
-  - DOMAIN-SUFFIX,feelgood.cn,🎯 全球直连
   - DOMAIN-SUFFIX,feiliao.com,🎯 全球直连
   - DOMAIN-SUFFIX,gifshow.com,🎯 全球直连
   - DOMAIN-SUFFIX,huoshan.com,🎯 全球直连
-  - DOMAIN-SUFFIX,huoshanzhibo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,ibytedapm.com,🎯 全球直连
   - DOMAIN-SUFFIX,iesdouyin.com,🎯 全球直连
   - DOMAIN-SUFFIX,ixigua.com,🎯 全球直连
   - DOMAIN-SUFFIX,kspkg.com,🎯 全球直连
@@ -5015,7 +3038,6 @@ rules:
   - DOMAIN-SUFFIX,snssdk.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao13.com,🎯 全球直连
-  - DOMAIN-SUFFIX,toutiaoapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocloud.com,🎯 全球直连
@@ -5024,7 +3046,6 @@ rules:
   - DOMAIN-SUFFIX,toutiaoimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaopage.com,🎯 全球直连
   - DOMAIN-SUFFIX,wukong.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zijieapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zijieimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,zjbyte.com,🎯 全球直连
   - DOMAIN-SUFFIX,zjcdn.com,🎯 全球直连
@@ -5040,7 +3061,6 @@ rules:
   - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyutv.com,🎯 全球直连
   - DOMAIN-SUFFIX,epicgames.com,🎯 全球直连
-  - DOMAIN-SUFFIX,epicgames.dev,🎯 全球直连
   - DOMAIN-SUFFIX,helpshift.com,🎯 全球直连
   - DOMAIN-SUFFIX,paragon.com,🎯 全球直连
   - DOMAIN-SUFFIX,unrealengine.com,🎯 全球直连
@@ -5114,16 +3134,10 @@ rules:
   - DOMAIN-SUFFIX,leju.com,🎯 全球直连
   - DOMAIN-SUFFIX,miaopai.com,🎯 全球直连
   - DOMAIN-SUFFIX,sina.com,🎯 全球直连
-  - DOMAIN-SUFFIX,sina.com.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,sina.cn,🎯 全球直连
   - DOMAIN-SUFFIX,sinaapp.com,🎯 全球直连
-  - DOMAIN-SUFFIX,sinaapp.cn,🎯 全球直连
   - DOMAIN-SUFFIX,sinaimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,sinaimg.cn,🎯 全球直连
   - DOMAIN-SUFFIX,weibo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,weibo.cn,🎯 全球直连
   - DOMAIN-SUFFIX,weibocdn.com,🎯 全球直连
-  - DOMAIN-SUFFIX,weibocdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,xiaoka.tv,🎯 全球直连
   - DOMAIN-SUFFIX,go2map.com,🎯 全球直连
   - DOMAIN-SUFFIX,sogo.com,🎯 全球直连
@@ -5140,21 +3154,20 @@ rules:
   - DOMAIN-SUFFIX,playstationnetwork.com,🎯 全球直连
   - DOMAIN-SUFFIX,sony.com,🎯 全球直连
   - DOMAIN-SUFFIX,sonyentertainmentnetwork.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
+  - DOMAIN-SUFFIX,csgo.wmsj.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,dl.steam.ksyna.com,🎯 全球直连
+  - DOMAIN-SUFFIX,dota2.wmsj.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,st.dl.bscstorage.net,🎯 全球直连
+  - DOMAIN-SUFFIX,st.dl.eccdnx.com,🎯 全球直连
+  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🎯 全球直连
   - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamgames.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steampowered.com.8686c.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamstat.us,🎯 全球直连
+  - DOMAIN-SUFFIX,steamstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
-  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
-  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
-  - DOMAIN,wmsjsteam.com,🎯 全球直连
-  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
-  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
-  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
-  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
-  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
-  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
-  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net,🎯 全球直连
   - DOMAIN-SUFFIX,foxmail.com,🎯 全球直连
   - DOMAIN-SUFFIX,gtimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,idqqimg.com,🎯 全球直连
@@ -5254,6 +3267,7 @@ rules:
   - DOMAIN-SUFFIX,baomitu.com,🎯 全球直连
   - DOMAIN-SUFFIX,bootcss.com,🎯 全球直连
   - DOMAIN-SUFFIX,jiasule.com,🎯 全球直连
+  - DOMAIN-SUFFIX,jsdelivr.net,🎯 全球直连
   - DOMAIN-SUFFIX,staticfile.org,🎯 全球直连
   - DOMAIN-SUFFIX,upaiyun.com,🎯 全球直连
   - DOMAIN-SUFFIX,10010.com,🎯 全球直连
@@ -5299,6 +3313,8 @@ rules:
   - DOMAIN-SUFFIX,clouddn.com,🎯 全球直连
   - DOMAIN-SUFFIX,cloudxns.net,🎯 全球直连
   - DOMAIN-SUFFIX,cn163.net,🎯 全球直连
+  - DOMAIN-SUFFIX,cnbeta.com,🎯 全球直连
+  - DOMAIN-SUFFIX,cnbetacdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,cnblogs.com,🎯 全球直连
   - DOMAIN-SUFFIX,cnki.net,🎯 全球直连
   - DOMAIN-SUFFIX,cnmstl.net,🎯 全球直连
@@ -5373,9 +3389,11 @@ rules:
   - DOMAIN-SUFFIX,lanzoux.com,🎯 全球直连
   - DOMAIN-SUFFIX,lemicp.com,🎯 全球直连
   - DOMAIN-SUFFIX,letitfly.me,🎯 全球直连
+  - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
   - DOMAIN-SUFFIX,lizhi.fm,🎯 全球直连
   - DOMAIN-SUFFIX,lizhi.io,🎯 全球直连
   - DOMAIN-SUFFIX,lizhifm.com,🎯 全球直连
+  - DOMAIN-SUFFIX,loli.net,🎯 全球直连
   - DOMAIN-SUFFIX,luoo.net,🎯 全球直连
   - DOMAIN-SUFFIX,lvmama.com,🎯 全球直连
   - DOMAIN-SUFFIX,lxdns.com,🎯 全球直连
@@ -5402,6 +3420,7 @@ rules:
   - DOMAIN-SUFFIX,oracle.com,🎯 全球直连
   - DOMAIN-SUFFIX,oschina.net,🎯 全球直连
   - DOMAIN-SUFFIX,ourdvs.com,🎯 全球直连
+  - DOMAIN-SUFFIX,paypal.com,🎯 全球直连
   - DOMAIN-SUFFIX,polyv.net,🎯 全球直连
   - DOMAIN-SUFFIX,qbox.me,🎯 全球直连
   - DOMAIN-SUFFIX,qcloud.com,🎯 全球直连
@@ -5420,7 +3439,9 @@ rules:
   - DOMAIN-SUFFIX,quanmin.tv,🎯 全球直连
   - DOMAIN-SUFFIX,qunar.com,🎯 全球直连
   - DOMAIN-SUFFIX,qunarzz.com,🎯 全球直连
+  - DOMAIN-SUFFIX,rarbg.to,🎯 全球直连
   - DOMAIN-SUFFIX,repaik.com,🎯 全球直连
+  - DOMAIN-SUFFIX,rrmj.tv,🎯 全球直连
   - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
   - DOMAIN-SUFFIX,runoob.com,🎯 全球直连
   - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
@@ -5428,6 +3449,7 @@ rules:
   - DOMAIN-SUFFIX,sf-express.com,🎯 全球直连
   - DOMAIN-SUFFIX,shumilou.net,🎯 全球直连
   - DOMAIN-SUFFIX,simplecd.me,🎯 全球直连
+  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
   - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
   - DOMAIN-SUFFIX,snwx.com,🎯 全球直连
   - DOMAIN-SUFFIX,soufunimg.com,🎯 全球直连
@@ -5491,13 +3513,6 @@ rules:
   - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
-# 中国云服务商ip端
-# 阿里
-# 腾讯 qq
-# 百度 Baidu
-# 华为 huwei
-# 网易 NetEase
-# 360
   - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
